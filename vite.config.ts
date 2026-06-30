@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite' // ← これを追加
+import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
+  // 🟢 ここを追加！（必ず自分のリポジトリ名と同じにしてください）
+  base: '/pokemon-battle-assist/', 
   plugins: [
     react(),
-    tailwindcss(), // ← これを追加
+    tailwindcss(),
   ],
 })
