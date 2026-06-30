@@ -1,0 +1,36 @@
+name: Update Meta Data
+
+on:
+  # 1. 定期実行（毎週月曜日の深夜0時に自動実行）
+  schedule:
+    - cron: '0 0 * * 1'
+  # 2. 手動実行（GitHubの画面からボタンでいつでも実行可能）
+  workflow_dispatch:
+
+permissions:
+  contents: write # リポジトリにデータを書き込む権限
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 コードをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Node.jsをセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 🚀 データ取得スクリプトを実行
+        run: node scripts/fetch-meta.js
+
+      - name: 💾 更新されたデータをコミット＆プッシュ
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add public/meta.json
+          # 変更がある場合のみコミットしてプッシュする
+          git commit -m "🤖 自動更新: 最新の環境データを取得" || echo "変更がないためコミットをスキップしました"
+          git push
