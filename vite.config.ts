@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   // 🟢 ここを追加！（必ず自分のリポジトリ名と同じにしてください）
-  base: '/pokemon-battle-assist/', 
+  base: './', 
   plugins: [
     react(),
     tailwindcss(),
