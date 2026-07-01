@@ -22,8 +22,11 @@ export default function App() {
   // 🟢 ここから追加：最終選出する3匹を保存するステート
   const [myPicks, setMyPicks] = useState<typeof POKEMON_LIST>([]);
   const [oppPicks, setOppPicks] = useState<typeof POKEMON_LIST>([]);
-  const [isMega, setIsMega] = useState(false); // メガシンカのトグル状態
-  // 🟢 ここまで追加
+  // const [isMega, setIsMega] = useState(false); // メガシンカのトグル状態
+  // 🟢 ここまで追加  
+  // 🟢 ここから追加：バトル画面で「現在対面しているポケモン」のインデックス（0〜2）
+  const [myActiveIdx, setMyActiveIdx] = useState(0);
+  const [oppActiveIdx, setOppActiveIdx] = useState(0);
 
   // 🟢 （テスト用）自分の選出候補ポケモン。本来は選んだパーティから取得します。
   const myParty = POKEMON_LIST.slice(0, 3); // フシギバナ、リザードン、カメックス
@@ -587,88 +590,133 @@ export default function App() {
           </div>
         )}
 
-        {/* 5. バトル画面（リアルダメージ計算実装版） */}
-        {currentScreen === 'battle' && (
-          <div className="space-y-4 animate-in fade-in zoom-in-95 duration-300">
-            <h2 className="text-xl font-bold border-l-4 border-red-500 pl-3 text-red-500">BATTLE START</h2>
-            
-            {myPicks[0] && oppPicks[0] ? (
-              <>
-                {/* 対面状況 */}
-                <div className="flex justify-between items-center bg-slate-900 border border-slate-800 p-4 rounded-xl">
-                  <div className="text-center w-2/5">
-                    <p className="text-xs text-cyan-400 mb-1">自分</p>
-                    <div className="font-bold text-lg">{myPicks[0].name}</div>
-                    {myPicks[0].megaStats && (
-                      <button 
-                        onClick={() => setIsMega(!isMega)}
-                        className={`mt-2 px-3 py-1 text-xs rounded-full border transition-colors ${isMega ? 'bg-purple-600 border-purple-400 text-white shadow-[0_0_10px_rgba(147,51,234,0.5)]' : 'bg-slate-800 border-slate-600 text-slate-400'}`}
-                      >
-                        {isMega ? 'メガシンカ中' : 'メガシンカ'}
-                      </button>
-                    )}
-                  </div>
-                  <div className="text-2xl font-black text-slate-600 italic">VS</div>
-                  <div className="text-center w-2/5">
-                    <p className="text-xs text-lime-400 mb-1">相手</p>
-                    <div className="font-bold text-lg">{oppPicks[0].name}</div>
-                  </div>
+        {/* 5. バトル画面（超実戦UI版） */}
+        {currentScreen === 'battle' && myPicks.length === 3 && oppPicks.length === 3 && (
+          <div className="space-y-6 animate-in fade-in zoom-in-95 duration-300">
+            <div className="flex justify-between items-center border-b border-slate-800 pb-2">
+              <h2 className="text-xl font-bold border-l-4 border-red-500 pl-3 text-red-500">BATTLE SIMULATOR</h2>
+              <button
+                onClick={() => {
+                  if (window.confirm('対戦を終了してホームに戻りますか？')) {
+                    setCurrentScreen('home');
+                    setOpponentParty([]); setMyPicks([]); setOppPicks([]);
+                    setMyActiveIdx(0); setOppActiveIdx(0);
+                  }
+                }}
+                className="text-xs bg-slate-800 hover:bg-red-950 text-slate-400 hover:text-red-400 px-3 py-1 rounded border border-slate-700 hover:border-red-900 transition-colors"
+              >
+                対戦終了
+              </button>
+            </div>
+
+            {/* 🟢 お互いのパーティと対面交代（上部） */}
+            <div className="flex justify-between gap-4">
+              {/* 自分のパーティ（タップで控えと交代） */}
+              <div className="w-1/2 bg-slate-900 border border-slate-800 rounded-xl p-3 shadow-lg">
+                <p className="text-[10px] text-cyan-400 mb-2 font-bold">YOUR TEAM (タップで交代)</p>
+                <div className="flex flex-col gap-2">
+                  {myPicks.map((poke, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setMyActiveIdx(idx)}
+                      className={`text-left px-3 py-2 rounded text-sm font-bold transition-all ${
+                        myActiveIdx === idx
+                          ? 'bg-cyan-900/40 border border-cyan-500 text-cyan-100 shadow-[0_0_10px_rgba(8,145,178,0.3)]'
+                          : 'bg-slate-800 border border-slate-700 text-slate-400 hover:border-slate-500 hover:bg-slate-750'
+                      }`}
+                    >
+                      {poke.name || '未設定'}
+                      {myActiveIdx === idx && <span className="float-right text-[10px] bg-cyan-600 text-white px-1.5 py-0.5 rounded mt-0.5">対面中</span>}
+                    </button>
+                  ))}
                 </div>
+              </div>
 
-                {/* リアルタイムダメージ計算結果 */}
-                <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
-                  <h3 className="text-sm font-bold text-slate-400 border-b border-slate-800 pb-2 mb-3">ダメージ計算（威力90の一致技を想定）</h3>
-                  <div className="space-y-3">
-                    {(() => {
-                      // 自分のステータス計算（A特化を想定）
-                      const myStats = (isMega && myPicks[0].megaStats) ? myPicks[0].megaStats : myPicks[0].baseStats;
-                      const myAttack = calculateStat(myStats.a, 252, false, 1.1); // A252振り、性格補正あり
+              {/* 相手のパーティ（タップで交代をシミュレーション） */}
+              <div className="w-1/2 bg-slate-900 border border-slate-800 rounded-xl p-3 shadow-lg">
+                <p className="text-[10px] text-lime-400 mb-2 font-bold">OPPONENT TEAM (タップで相手変更)</p>
+                <div className="flex flex-col gap-2">
+                  {oppPicks.map((poke, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setOppActiveIdx(idx)}
+                      className={`text-left px-3 py-2 rounded text-sm font-bold transition-all ${
+                        oppActiveIdx === idx
+                          ? 'bg-lime-900/40 border border-lime-500 text-lime-100 shadow-[0_0_10px_rgba(101,163,13,0.3)]'
+                          : 'bg-slate-800 border border-slate-700 text-slate-400 hover:border-slate-500 hover:bg-slate-750'
+                      }`}
+                    >
+                      {poke.name}
+                      {oppActiveIdx === idx && <span className="float-right text-[10px] bg-lime-600 text-white px-1.5 py-0.5 rounded mt-0.5">対面中</span>}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
 
-                      // 相手のステータス計算（H4振りとHB特化）
-                      const oppStats = oppPicks[0].baseStats;
-                      const oppH4 = calculateStat(oppStats.h, 4, true);
-                      const oppB4 = calculateStat(oppStats.b, 0, false);
-                      
-                      const oppH252 = calculateStat(oppStats.h, 252, true);
-                      const oppB252 = calculateStat(oppStats.b, 252, false, 1.1); // 性格補正あり
+            {/* 🟢 現在の対面と技選択（下部） */}
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 relative overflow-hidden shadow-lg">
+              {/* 装飾用のグラデーションライン */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-lime-500 opacity-50"></div>
+              
+              <div className="flex justify-between items-end mb-4">
+                <div>
+                  <p className="text-xs text-slate-400 mb-1">
+                    <span className="text-cyan-400">{myPicks[myActiveIdx].name}</span> VS <span className="text-lime-400">{oppPicks[oppActiveIdx].name}</span>
+                  </p>
+                  <h3 className="text-lg font-bold text-slate-200">技を選択してダメージ計算</h3>
+                </div>
+              </div>
 
-                      // 相性計算
-                      const typeEffectiveness = getEffectiveness(myPicks[0].type1, oppPicks[0].type1, oppPicks[0].type2);
-                      const movePower = 90; // 仮のメインウェポン威力（後で実際の技を選択できるように拡張可能）
+              <div className="grid grid-cols-2 gap-3">
+                {/* 🟢 自分のポケモンの技4つと、リアルタイムダメージ計算 */}
+                {(myPicks[myActiveIdx] as unknown as TrainedPokemon)?.moves?.map((move, i) => {
+                  const myPoke = myPicks[myActiveIdx] as unknown as TrainedPokemon;
+                  const oppPoke = oppPicks[oppActiveIdx]; // ※現在は検索用のダミーデータ構造
 
-                      // H4振りへのダメージ
-                      const dmgH4 = calculateDamage(50, movePower, myAttack, oppB4, { stab: 1.5, typeEffectiveness });
-                      // HB特化へのダメージ
-                      const dmgHB = calculateDamage(50, movePower, myAttack, oppB252, { stab: 1.5, typeEffectiveness });
+                  // ⚠️ ここは仮のダメージ計算ロジック（次で実際の技威力データ等と連動させます）
+                  // 現在は「威力が90の物理技」と仮定して計算を回しています
+                  const movePower = move ? 90 : 0; 
+                  const isStab = myPoke.type1 === 'ノーマル' ? 1.5 : 1.0; // 仮の一致判定
 
-                      return (
-                        <div className="bg-slate-800 p-3 rounded flex justify-between items-center">
-                          <span className="font-medium text-slate-200">タイプ一致 威力90技</span>
-                          <div className="text-right">
-                            <p className="text-sm text-cyan-300">無振: {getDamageText(dmgH4.minDamage, dmgH4.maxDamage, oppH4)}</p>
-                            <p className="text-xs text-slate-400 mt-1">HB特化: {getDamageText(dmgHB.minDamage, dmgHB.maxDamage, oppH252)}</p>
-                          </div>
+                  // 自分の攻撃力（ポイントを反映）
+                  const myAttack = calculateStat(100, myPoke.evs.a || 0, false); 
+                  
+                  // 相手の耐久力（無振りと、H32・B32特化の2パターン）
+                  const oppHpBase = oppPoke.baseStats?.h || 100;
+                  const oppDefBase = oppPoke.baseStats?.b || 100;
+                  
+                  const oppH4 = calculateStat(oppHpBase, 0, true); // 無振りHP
+                  const oppB4 = calculateStat(oppDefBase, 0, false); // 無振り防御
+                  
+                  const oppHMax = calculateStat(oppHpBase, 32, true); // H32振り
+                  const oppBMax = calculateStat(oppDefBase, 32, false); // B32振り
+
+                  const dmgMin = calculateDamage(50, movePower, myAttack, oppB4, { stab: isStab, typeEffectiveness: 1 });
+                  const dmgMax = calculateDamage(50, movePower, myAttack, oppBMax, { stab: isStab, typeEffectiveness: 1 });
+
+                  return (
+                    <button
+                      key={i}
+                      disabled={!move}
+                      className="bg-slate-800 border border-slate-700 hover:border-cyan-500 hover:bg-slate-750 p-3 rounded-xl text-left transition-all disabled:opacity-30 disabled:cursor-not-allowed group relative"
+                    >
+                      <div className="font-bold text-slate-200 text-sm mb-1.5">{move || '技未設定'}</div>
+                      {move && (
+                        <div className="text-[11px] text-slate-400 group-hover:text-cyan-300 leading-tight">
+                          無振り: {getDamageText(dmgMin.minDamage, dmgMin.maxDamage, oppH4)}<br/>
+                          特化時: {getDamageText(dmgMax.minDamage, dmgMax.maxDamage, oppHMax)}
                         </div>
-                      );
-                    })()}
-                  </div>
-                </div>
-              </>
-            ) : (
-              <div className="text-center text-slate-500 py-10">ポケモンが選出されていません</div>
-            )}
-
-            <button 
-              onClick={() => { 
-                if(window.confirm('本当に対戦を終了してホームに戻りますか？')) {
-                  setCurrentScreen('home'); 
-                  setOpponentParty([]); setMyPicks([]); setOppPicks([]); setIsMega(false);
-                }
-              }} 
-              className="w-full bg-slate-800 text-slate-300 border border-slate-700 font-bold py-4 rounded-xl hover:bg-red-950 transition-all mt-8"
-            >
-              対戦終了（ホームへ戻る）
-            </button>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+              
+              <p className="text-center text-[10px] text-slate-500 mt-4">
+                ※現在はUIのテストモードです。次のステップで実際の計算式が繋がります。
+              </p>
+            </div>
           </div>
         )}
 
