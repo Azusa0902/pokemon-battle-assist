@@ -49,7 +49,8 @@ export const useStore = create<AppState>()(
       // 🟢 アプリ起動時に public/champions-data.json を読み込む関数
       fetchPokedex: async () => {
         try {
-          const res = await fetch('./champions-data.json');
+          // 🟢 URLの末尾に現在の時間をくっつけて、ブラウザに「毎回新しいファイルだ」と認識させる
+          const res = await fetch(`./champions-data.json?t=${new Date().getTime()}`);
           const data = await res.json();
           set({ fullPokedex: data });
         } catch (error) {
