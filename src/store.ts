@@ -15,6 +15,16 @@ export type TrainedPokemon = {
   item: string; // 持ち物
 };
 
+// 🟢 これが統合された全ポケモンデータの型です
+export type PokemonData = {
+  id: number;
+  name: string;
+  type1: string;
+  type2: string;
+  baseStats: { h: number; a: number; b: number; c: number; d: number; s: number };
+  topMoves?: string[]; // メタデータから取得した技候補
+};
+
 export type Party = {
   id: string;
   name: string;
@@ -23,6 +33,8 @@ export type Party = {
 
 type AppState = {
   parties: Party[];
+  fullPokedex: PokemonData[]; // 🟢 追加
+  fetchPokedex: () => Promise<void>; // 🟢 追加
   addParty: (party: Party) => void;
   updateParty: (id: string, updatedParty: Party) => void;
   deleteParty: (id: string) => void;
@@ -32,6 +44,19 @@ export const useStore = create<AppState>()(
   persist(
     (set) => ({
       parties: [],
+      fullPokedex: [], // 🟢 初期値は空配列
+
+      // 🟢 アプリ起動時に public/champions-data.json を読み込む関数
+      fetchPokedex: async () => {
+        try {
+          const res = await fetch('./champions-data.json');
+          const data = await res.json();
+          set({ fullPokedex: data });
+        } catch (error) {
+          console.error('図鑑データの読み込みに失敗しました', error);
+        }
+      },
+
       addParty: (party) => set((state) => ({ parties: [...state.parties, party] })),
       updateParty: (id, updatedParty) => set((state) => ({
         parties: state.parties.map(p => p.id === id ? updatedParty : p)

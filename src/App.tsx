@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 import { useStore} from './store'; // 🟢 PartyとTrainedPokemonを追加
 import type { Party, TrainedPokemon } from './store';
@@ -11,13 +11,19 @@ type Screen = 'home' | 'party-edit' | 'party-select' | 'opponent-input' | 'analy
 
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('home');
-  const { parties, addParty, updateParty, deleteParty } = useStore();
+  // 🟢 fullPokedex と fetchPokedex を追加で呼び出す
+  const { parties, addParty, updateParty, deleteParty, fullPokedex, fetchPokedex } = useStore();
   const [editingParty, setEditingParty] = useState<Party | null>(null);
   const [editingSlot, setEditingSlot] = useState<number | null>(null); // 何匹目を編集しているか
   const [tempPokemon, setTempPokemon] = useState<TrainedPokemon | null>(null); // 編集中のポケモンデータ
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]); // 🟢 複数選択用に配列に変更！
   const [opponentParty, setOpponentParty] = useState<typeof POKEMON_LIST>([]);
+
+  // 🟢 アプリ起動時に1回だけデータを取得
+  useEffect(() => {
+    fetchPokedex();
+  }, []);
   
   // 🟢 ここから追加：最終選出する3匹を保存するステート
   const [myPicks, setMyPicks] = useState<typeof POKEMON_LIST>([]);
