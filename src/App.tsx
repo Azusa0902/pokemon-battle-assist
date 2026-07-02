@@ -31,7 +31,7 @@ export default function App() {
     fetchMovesDict();
   }, []);
 
-  // 🟢 完全に作り直した「鉄壁の検索フィルター」
+  // 🟢 鉄壁の検索フィルター（絶対にバグらないAND判定）
   const filteredPokemon = fullPokedex.filter(p => {
     if (!p || !p.name) return false;
 
@@ -42,21 +42,12 @@ export default function App() {
       matchName = toKatakana(p.name).includes(toKatakana(searchQuery));
     }
 
-    // 2. タイプ検索（完全なるAND/OR判定）
+    // 2. タイプ検索（選ばれたタイプを「すべて」持っているかチェック）
     let matchType = true;
     if (selectedTypes.length > 0) {
       const t1 = p.type1?.trim() || '';
       const t2 = p.type2?.trim() || '';
-      
-      if (selectedTypes.length === 1) {
-        // 1つ選択：そのタイプを持っているか
-        matchType = t1 === selectedTypes[0] || t2 === selectedTypes[0];
-      } else if (selectedTypes.length === 2) {
-        // 2つ選択：両方のタイプを持っているか（複合タイプの厳格検索）
-        const hasFirst = t1 === selectedTypes[0] || t2 === selectedTypes[0];
-        const hasSecond = t1 === selectedTypes[1] || t2 === selectedTypes[1];
-        matchType = hasFirst && hasSecond;
-      }
+      matchType = selectedTypes.every(selected => t1 === selected || t2 === selected);
     }
 
     return matchName && matchType;
@@ -366,17 +357,28 @@ export default function App() {
               <div className="flex flex-wrap gap-1.5">
                 {POKEMON_TYPES.map(type => {
                   const isSelected = selectedTypes.includes(type);
+                  // 2個選ばれていて、かつ自分が選ばれていない場合はボタンを半透明にする
+                  const isDisabled = !isSelected && selectedTypes.length >= 2;
+
                   return (
                     <button
                       key={type}
+                      disabled={isDisabled}
                       onClick={() => {
-                        setSelectedTypes(prev => {
-                          if (prev.includes(type)) return prev.filter(t => t !== type);
-                          if (prev.length < 2) return [...prev, type];
-                          return [prev[1], type];
-                        });
+                        // 🟢 シンプルで絶対にバグらない選択ロジック
+                        if (isSelected) {
+                          // 選ばれていれば解除
+                          setSelectedTypes(selectedTypes.filter(t => t !== type));
+                        } else if (selectedTypes.length < 2) {
+                          // 選ばれていなくて、まだ2個未満なら追加
+                          setSelectedTypes([...selectedTypes, type]);
+                        }
                       }}
-                      className={`px-2 py-1 text-xs font-medium rounded border ${isSelected ? 'bg-lime-600 border-lime-400 text-white' : 'bg-slate-800 border-slate-700 text-slate-400'}`}
+                      className={`px-2 py-1 text-xs font-medium rounded border transition-colors ${
+                        isSelected 
+                          ? 'bg-lime-600 border-lime-400 text-white shadow-[0_0_8px_rgba(101,163,13,0.5)]' 
+                          : 'bg-slate-800 border-slate-700 text-slate-400 hover:border-slate-500'
+                      } ${isDisabled ? 'opacity-30 cursor-not-allowed' : ''}`}
                     >
                       {type}
                     </button>
