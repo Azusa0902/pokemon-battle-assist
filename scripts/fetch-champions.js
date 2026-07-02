@@ -42,6 +42,8 @@ async function scrapeWithPuppeteer() {
         const nameEl = item.querySelector('.name a');
         if (!nameEl) return;
         const name = nameEl.innerText.trim();
+
+        const relativeUrl = nameEl.getAttribute('href');
         
         if (!name) return;
 
@@ -68,6 +70,7 @@ async function scrapeWithPuppeteer() {
         data.push({
           id: id,
           name: name,
+          url: `https://yakkun.com${relativeUrl}`,
           type1: type1,
           type2: type2,
           baseStats: { h, a, b, c, d, s },
