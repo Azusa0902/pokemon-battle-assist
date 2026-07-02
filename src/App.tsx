@@ -137,6 +137,15 @@ export default function App() {
                       >
                         編集
                       </button>
+                      {/* 🟢 消え去っていた削除ボタンを復活（これでdeletePartyが使われてエラー消滅！） */}
+                      <button 
+                        onClick={() => {
+                          if (window.confirm('この編成を削除しますか？')) deleteParty(party.id);
+                        }}
+                        className="bg-slate-800 hover:bg-red-950 text-slate-500 hover:text-red-400 border border-slate-700 hover:border-red-900 px-3 py-2 rounded-lg text-sm transition-colors"
+                      >
+                        削除
+                      </button>
                       <button 
                         onClick={() => {
                           setActiveParty(party);
