@@ -16,13 +16,19 @@ async function buildChampionsData() {
     const jpRes = await fetch('https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/pokedex.json');
     const jpRaw = await jpRes.json();
     
-    // 英語名 -> 日本語名の辞書を作成
+    // 英語名 -> 日本語名の基本辞書を作成
     const nameMap = {};
     jpRaw.forEach(p => {
       nameMap[p.name.english.toLowerCase()] = p.name.japanese;
     });
 
-    // タイプの翻訳辞書
+    // 🟢 フォルム名の翻訳辞書（メガシンカやリージョンフォルム対応）
+    const formMap = {
+      'Mega': 'メガ', 'Mega-X': 'メガX', 'Mega-Y': 'メガY',
+      'Alola': 'アローラ', 'Galar': 'ガラル', 'Hisui': 'ヒスイ', 'Paldea': 'パルデア',
+      'Therian': '霊獣', 'Origin': 'オリジン', 'Rapid-Strike': 'れんげき', 'Single-Strike': 'いちげき'
+    };
+
     const typeMap = {
       'Normal': 'ノーマル', 'Fire': 'ほのお', 'Water': 'みず', 'Grass': 'くさ',
       'Electric': 'でんき', 'Ice': 'こおり', 'Fighting': 'かくとう', 'Poison': 'どく',
@@ -33,10 +39,27 @@ async function buildChampionsData() {
 
     const mergedData = Object.values(pokedexRaw)
       .filter(p => p.num > 0)
+      // 🟢 巨大マックス（Gmax）やヌシ（Totem）など、チャンピオンズに無い不要なフォルムを徹底除外！
+      .filter(p => !p.name.includes('-Gmax') && !p.name.includes('-Totem'))
       .map(p => {
-        // 辞書にあれば日本語、なければ英語をそのまま使う
+        // 🟢 高度な翻訳ロジック
+        let jpName = p.name;
         const engNameLower = p.name.toLowerCase();
-        const jpName = nameMap[engNameLower] || p.name; 
+        
+        if (nameMap[engNameLower]) {
+          // 完全一致する場合（通常ポケモン）
+          jpName = nameMap[engNameLower];
+        } else if (p.name.includes('-')) {
+          // ハイフンが含まれる場合（メガシンカ等のフォルム違い）
+          const parts = p.name.split('-');
+          const baseName = parts[0];
+          const formName = parts.slice(1).join('-'); // 例: Mega-X
+          
+          if (nameMap[baseName.toLowerCase()]) {
+            const translatedForm = formMap[formName] || formName;
+            jpName = `${nameMap[baseName.toLowerCase()]}（${translatedForm}）`;
+          }
+        }
         
         return {
           id: p.num,
@@ -56,7 +79,7 @@ async function buildChampionsData() {
 
     const targetPath = path.join(__dirname, '..', 'public', 'champions-data.json');
     fs.writeFileSync(targetPath, JSON.stringify(mergedData, null, 2));
-    console.log(`✅ 構築完了！ 日本語化されたデータを保存しました。`);
+    console.log(`✅ 構築完了！ キョダイマックスを除外し、翻訳を強化したデータを保存しました。`);
   } catch (error) {
     console.error('❌ エラー:', error);
   }

@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "name": "Venusaur-Mega",
+    "name": "フシギバナ（メガ）",
     "type1": "くさ",
     "type2": "どく",
     "baseStats": {
@@ -52,20 +52,6 @@
       "b": 123,
       "c": 122,
       "d": 120,
-      "s": 80
-    }
-  },
-  {
-    "id": 3,
-    "name": "Venusaur-Gmax",
-    "type1": "くさ",
-    "type2": "どく",
-    "baseStats": {
-      "h": 80,
-      "a": 82,
-      "b": 83,
-      "c": 100,
-      "d": 100,
       "s": 80
     }
   },
@@ -113,7 +99,7 @@
   },
   {
     "id": 6,
-    "name": "Charizard-Mega-X",
+    "name": "リザードン（メガX）",
     "type1": "ほのお",
     "type2": "ドラゴン",
     "baseStats": {
@@ -127,7 +113,7 @@
   },
   {
     "id": 6,
-    "name": "Charizard-Mega-Y",
+    "name": "リザードン（メガY）",
     "type1": "ほのお",
     "type2": "ひこう",
     "baseStats": {
@@ -136,20 +122,6 @@
       "b": 78,
       "c": 159,
       "d": 115,
-      "s": 100
-    }
-  },
-  {
-    "id": 6,
-    "name": "Charizard-Gmax",
-    "type1": "ほのお",
-    "type2": "ひこう",
-    "baseStats": {
-      "h": 78,
-      "a": 84,
-      "b": 78,
-      "c": 109,
-      "d": 85,
       "s": 100
     }
   },
@@ -197,7 +169,7 @@
   },
   {
     "id": 9,
-    "name": "Blastoise-Mega",
+    "name": "カメックス（メガ）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -206,20 +178,6 @@
       "b": 120,
       "c": 135,
       "d": 115,
-      "s": 78
-    }
-  },
-  {
-    "id": 9,
-    "name": "Blastoise-Gmax",
-    "type1": "みず",
-    "type2": "",
-    "baseStats": {
-      "h": 79,
-      "a": 83,
-      "b": 100,
-      "c": 85,
-      "d": 105,
       "s": 78
     }
   },
@@ -254,20 +212,6 @@
   {
     "id": 12,
     "name": "バタフリー",
-    "type1": "むし",
-    "type2": "ひこう",
-    "baseStats": {
-      "h": 60,
-      "a": 45,
-      "b": 50,
-      "c": 90,
-      "d": 80,
-      "s": 70
-    }
-  },
-  {
-    "id": 12,
-    "name": "Butterfree-Gmax",
     "type1": "むし",
     "type2": "ひこう",
     "baseStats": {
@@ -323,7 +267,7 @@
   },
   {
     "id": 15,
-    "name": "Beedrill-Mega",
+    "name": "スピアー（メガ）",
     "type1": "むし",
     "type2": "どく",
     "baseStats": {
@@ -379,7 +323,7 @@
   },
   {
     "id": 18,
-    "name": "Pidgeot-Mega",
+    "name": "ピジョット（メガ）",
     "type1": "ノーマル",
     "type2": "ひこう",
     "baseStats": {
@@ -407,7 +351,7 @@
   },
   {
     "id": 19,
-    "name": "Rattata-Alola",
+    "name": "コラッタ（アローラ）",
     "type1": "あく",
     "type2": "ノーマル",
     "baseStats": {
@@ -435,21 +379,7 @@
   },
   {
     "id": 20,
-    "name": "Raticate-Alola",
-    "type1": "あく",
-    "type2": "ノーマル",
-    "baseStats": {
-      "h": 75,
-      "a": 71,
-      "b": 70,
-      "c": 40,
-      "d": 80,
-      "s": 77
-    }
-  },
-  {
-    "id": 20,
-    "name": "Raticate-Alola-Totem",
+    "name": "ラッタ（アローラ）",
     "type1": "あく",
     "type2": "ノーマル",
     "baseStats": {
@@ -533,7 +463,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Cosplay",
+    "name": "ピカチュウ（Cosplay）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -547,7 +477,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Rock-Star",
+    "name": "ピカチュウ（Rock-Star）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -561,7 +491,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Belle",
+    "name": "ピカチュウ（Belle）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -575,7 +505,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Pop-Star",
+    "name": "ピカチュウ（Pop-Star）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -589,7 +519,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-PhD",
+    "name": "ピカチュウ（PhD）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -603,7 +533,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Libre",
+    "name": "ピカチュウ（Libre）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -617,7 +547,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Original",
+    "name": "ピカチュウ（Original）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -631,7 +561,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Hoenn",
+    "name": "ピカチュウ（Hoenn）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -645,7 +575,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Sinnoh",
+    "name": "ピカチュウ（Sinnoh）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -659,7 +589,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Unova",
+    "name": "ピカチュウ（Unova）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -673,7 +603,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Kalos",
+    "name": "ピカチュウ（Kalos）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -687,7 +617,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Alola",
+    "name": "ピカチュウ（アローラ）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -701,7 +631,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Partner",
+    "name": "ピカチュウ（Partner）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -715,7 +645,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Starter",
+    "name": "ピカチュウ（Starter）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -729,21 +659,7 @@
   },
   {
     "id": 25,
-    "name": "Pikachu-Gmax",
-    "type1": "でんき",
-    "type2": "",
-    "baseStats": {
-      "h": 35,
-      "a": 55,
-      "b": 40,
-      "c": 50,
-      "d": 50,
-      "s": 90
-    }
-  },
-  {
-    "id": 25,
-    "name": "Pikachu-World",
+    "name": "ピカチュウ（World）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -771,7 +687,7 @@
   },
   {
     "id": 26,
-    "name": "Raichu-Alola",
+    "name": "ライチュウ（アローラ）",
     "type1": "でんき",
     "type2": "エスパー",
     "baseStats": {
@@ -785,7 +701,7 @@
   },
   {
     "id": 26,
-    "name": "Raichu-Mega-X",
+    "name": "ライチュウ（メガX）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -799,7 +715,7 @@
   },
   {
     "id": 26,
-    "name": "Raichu-Mega-Y",
+    "name": "ライチュウ（メガY）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -827,7 +743,7 @@
   },
   {
     "id": 27,
-    "name": "Sandshrew-Alola",
+    "name": "サンド（アローラ）",
     "type1": "こおり",
     "type2": "はがね",
     "baseStats": {
@@ -855,7 +771,7 @@
   },
   {
     "id": 28,
-    "name": "Sandslash-Alola",
+    "name": "サンドパン（アローラ）",
     "type1": "こおり",
     "type2": "はがね",
     "baseStats": {
@@ -981,7 +897,7 @@
   },
   {
     "id": 36,
-    "name": "Clefable-Mega",
+    "name": "ピクシー（メガ）",
     "type1": "フェアリー",
     "type2": "ひこう",
     "baseStats": {
@@ -1009,7 +925,7 @@
   },
   {
     "id": 37,
-    "name": "Vulpix-Alola",
+    "name": "ロコン（アローラ）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -1037,7 +953,7 @@
   },
   {
     "id": 38,
-    "name": "Ninetales-Alola",
+    "name": "キュウコン（アローラ）",
     "type1": "こおり",
     "type2": "フェアリー",
     "baseStats": {
@@ -1219,7 +1135,7 @@
   },
   {
     "id": 50,
-    "name": "Diglett-Alola",
+    "name": "ディグダ（アローラ）",
     "type1": "じめん",
     "type2": "はがね",
     "baseStats": {
@@ -1247,7 +1163,7 @@
   },
   {
     "id": 51,
-    "name": "Dugtrio-Alola",
+    "name": "ダグトリオ（アローラ）",
     "type1": "じめん",
     "type2": "はがね",
     "baseStats": {
@@ -1275,7 +1191,7 @@
   },
   {
     "id": 52,
-    "name": "Meowth-Alola",
+    "name": "ニャース（アローラ）",
     "type1": "あく",
     "type2": "",
     "baseStats": {
@@ -1289,7 +1205,7 @@
   },
   {
     "id": 52,
-    "name": "Meowth-Galar",
+    "name": "ニャース（ガラル）",
     "type1": "はがね",
     "type2": "",
     "baseStats": {
@@ -1299,20 +1215,6 @@
       "c": 40,
       "d": 40,
       "s": 40
-    }
-  },
-  {
-    "id": 52,
-    "name": "Meowth-Gmax",
-    "type1": "ノーマル",
-    "type2": "",
-    "baseStats": {
-      "h": 40,
-      "a": 45,
-      "b": 35,
-      "c": 40,
-      "d": 40,
-      "s": 90
     }
   },
   {
@@ -1331,7 +1233,7 @@
   },
   {
     "id": 53,
-    "name": "Persian-Alola",
+    "name": "ペルシアン（アローラ）",
     "type1": "あく",
     "type2": "",
     "baseStats": {
@@ -1415,7 +1317,7 @@
   },
   {
     "id": 58,
-    "name": "Growlithe-Hisui",
+    "name": "ガーディ（ヒスイ）",
     "type1": "ほのお",
     "type2": "いわ",
     "baseStats": {
@@ -1443,7 +1345,7 @@
   },
   {
     "id": 59,
-    "name": "Arcanine-Hisui",
+    "name": "ウインディ（ヒスイ）",
     "type1": "ほのお",
     "type2": "いわ",
     "baseStats": {
@@ -1541,7 +1443,7 @@
   },
   {
     "id": 65,
-    "name": "Alakazam-Mega",
+    "name": "フーディン（メガ）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -1584,20 +1486,6 @@
   {
     "id": 68,
     "name": "カイリキー",
-    "type1": "かくとう",
-    "type2": "",
-    "baseStats": {
-      "h": 90,
-      "a": 130,
-      "b": 80,
-      "c": 65,
-      "d": 85,
-      "s": 55
-    }
-  },
-  {
-    "id": 68,
-    "name": "Machamp-Gmax",
     "type1": "かくとう",
     "type2": "",
     "baseStats": {
@@ -1653,7 +1541,7 @@
   },
   {
     "id": 71,
-    "name": "Victreebel-Mega",
+    "name": "ウツボット（メガ）",
     "type1": "くさ",
     "type2": "どく",
     "baseStats": {
@@ -1709,7 +1597,7 @@
   },
   {
     "id": 74,
-    "name": "Geodude-Alola",
+    "name": "イシツブテ（アローラ）",
     "type1": "いわ",
     "type2": "でんき",
     "baseStats": {
@@ -1737,7 +1625,7 @@
   },
   {
     "id": 75,
-    "name": "Graveler-Alola",
+    "name": "ゴローン（アローラ）",
     "type1": "いわ",
     "type2": "でんき",
     "baseStats": {
@@ -1765,7 +1653,7 @@
   },
   {
     "id": 76,
-    "name": "Golem-Alola",
+    "name": "ゴローニャ（アローラ）",
     "type1": "いわ",
     "type2": "でんき",
     "baseStats": {
@@ -1793,7 +1681,7 @@
   },
   {
     "id": 77,
-    "name": "Ponyta-Galar",
+    "name": "ポニータ（ガラル）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -1821,7 +1709,7 @@
   },
   {
     "id": 78,
-    "name": "Rapidash-Galar",
+    "name": "ギャロップ（ガラル）",
     "type1": "エスパー",
     "type2": "フェアリー",
     "baseStats": {
@@ -1849,7 +1737,7 @@
   },
   {
     "id": 79,
-    "name": "Slowpoke-Galar",
+    "name": "ヤドン（ガラル）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -1877,7 +1765,7 @@
   },
   {
     "id": 80,
-    "name": "Slowbro-Mega",
+    "name": "ヤドラン（メガ）",
     "type1": "みず",
     "type2": "エスパー",
     "baseStats": {
@@ -1891,7 +1779,7 @@
   },
   {
     "id": 80,
-    "name": "Slowbro-Galar",
+    "name": "ヤドラン（ガラル）",
     "type1": "どく",
     "type2": "エスパー",
     "baseStats": {
@@ -2031,7 +1919,7 @@
   },
   {
     "id": 88,
-    "name": "Grimer-Alola",
+    "name": "ベトベター（アローラ）",
     "type1": "どく",
     "type2": "あく",
     "baseStats": {
@@ -2059,7 +1947,7 @@
   },
   {
     "id": 89,
-    "name": "Muk-Alola",
+    "name": "ベトベトン（アローラ）",
     "type1": "どく",
     "type2": "あく",
     "baseStats": {
@@ -2143,7 +2031,7 @@
   },
   {
     "id": 94,
-    "name": "Gengar-Mega",
+    "name": "ゲンガー（メガ）",
     "type1": "ゴースト",
     "type2": "どく",
     "baseStats": {
@@ -2153,20 +2041,6 @@
       "c": 170,
       "d": 95,
       "s": 130
-    }
-  },
-  {
-    "id": 94,
-    "name": "Gengar-Gmax",
-    "type1": "ゴースト",
-    "type2": "どく",
-    "baseStats": {
-      "h": 60,
-      "a": 65,
-      "b": 60,
-      "c": 130,
-      "d": 75,
-      "s": 110
     }
   },
   {
@@ -2240,20 +2114,6 @@
     }
   },
   {
-    "id": 99,
-    "name": "Kingler-Gmax",
-    "type1": "みず",
-    "type2": "",
-    "baseStats": {
-      "h": 55,
-      "a": 130,
-      "b": 115,
-      "c": 50,
-      "d": 50,
-      "s": 75
-    }
-  },
-  {
     "id": 100,
     "name": "ビリリダマ",
     "type1": "でんき",
@@ -2269,7 +2129,7 @@
   },
   {
     "id": 100,
-    "name": "Voltorb-Hisui",
+    "name": "ビリリダマ（ヒスイ）",
     "type1": "でんき",
     "type2": "くさ",
     "baseStats": {
@@ -2297,7 +2157,7 @@
   },
   {
     "id": 101,
-    "name": "Electrode-Hisui",
+    "name": "マルマイン（ヒスイ）",
     "type1": "でんき",
     "type2": "くさ",
     "baseStats": {
@@ -2339,7 +2199,7 @@
   },
   {
     "id": 103,
-    "name": "Exeggutor-Alola",
+    "name": "ナッシー（アローラ）",
     "type1": "くさ",
     "type2": "ドラゴン",
     "baseStats": {
@@ -2381,21 +2241,7 @@
   },
   {
     "id": 105,
-    "name": "Marowak-Alola",
-    "type1": "ほのお",
-    "type2": "ゴースト",
-    "baseStats": {
-      "h": 60,
-      "a": 80,
-      "b": 110,
-      "c": 50,
-      "d": 80,
-      "s": 45
-    }
-  },
-  {
-    "id": 105,
-    "name": "Marowak-Alola-Totem",
+    "name": "ガラガラ（アローラ）",
     "type1": "ほのお",
     "type2": "ゴースト",
     "baseStats": {
@@ -2479,7 +2325,7 @@
   },
   {
     "id": 110,
-    "name": "Weezing-Galar",
+    "name": "マタドガス（ガラル）",
     "type1": "どく",
     "type2": "フェアリー",
     "baseStats": {
@@ -2563,7 +2409,7 @@
   },
   {
     "id": 115,
-    "name": "Kangaskhan-Mega",
+    "name": "ガルーラ（メガ）",
     "type1": "ノーマル",
     "type2": "",
     "baseStats": {
@@ -2661,7 +2507,7 @@
   },
   {
     "id": 121,
-    "name": "Starmie-Mega",
+    "name": "スターミー（メガ）",
     "type1": "みず",
     "type2": "エスパー",
     "baseStats": {
@@ -2689,7 +2535,7 @@
   },
   {
     "id": 122,
-    "name": "Mr. Mime-Galar",
+    "name": "バリヤード（ガラル）",
     "type1": "こおり",
     "type2": "エスパー",
     "baseStats": {
@@ -2773,7 +2619,7 @@
   },
   {
     "id": 127,
-    "name": "Pinsir-Mega",
+    "name": "カイロス（メガ）",
     "type1": "むし",
     "type2": "ひこう",
     "baseStats": {
@@ -2801,7 +2647,7 @@
   },
   {
     "id": 128,
-    "name": "Tauros-Paldea-Combat",
+    "name": "ケンタロス（Paldea-Combat）",
     "type1": "かくとう",
     "type2": "",
     "baseStats": {
@@ -2815,7 +2661,7 @@
   },
   {
     "id": 128,
-    "name": "Tauros-Paldea-Blaze",
+    "name": "ケンタロス（Paldea-Blaze）",
     "type1": "かくとう",
     "type2": "ほのお",
     "baseStats": {
@@ -2829,7 +2675,7 @@
   },
   {
     "id": 128,
-    "name": "Tauros-Paldea-Aqua",
+    "name": "ケンタロス（Paldea-Aqua）",
     "type1": "かくとう",
     "type2": "みず",
     "baseStats": {
@@ -2871,7 +2717,7 @@
   },
   {
     "id": 130,
-    "name": "Gyarados-Mega",
+    "name": "ギャラドス（メガ）",
     "type1": "みず",
     "type2": "あく",
     "baseStats": {
@@ -2886,20 +2732,6 @@
   {
     "id": 131,
     "name": "ラプラス",
-    "type1": "みず",
-    "type2": "こおり",
-    "baseStats": {
-      "h": 130,
-      "a": 85,
-      "b": 80,
-      "c": 85,
-      "d": 95,
-      "s": 60
-    }
-  },
-  {
-    "id": 131,
-    "name": "Lapras-Gmax",
     "type1": "みず",
     "type2": "こおり",
     "baseStats": {
@@ -2941,7 +2773,7 @@
   },
   {
     "id": 133,
-    "name": "Eevee-Starter",
+    "name": "イーブイ（Starter）",
     "type1": "ノーマル",
     "type2": "",
     "baseStats": {
@@ -2951,20 +2783,6 @@
       "c": 65,
       "d": 85,
       "s": 75
-    }
-  },
-  {
-    "id": 133,
-    "name": "Eevee-Gmax",
-    "type1": "ノーマル",
-    "type2": "",
-    "baseStats": {
-      "h": 55,
-      "a": 55,
-      "b": 50,
-      "c": 45,
-      "d": 65,
-      "s": 55
     }
   },
   {
@@ -3095,7 +2913,7 @@
   },
   {
     "id": 142,
-    "name": "Aerodactyl-Mega",
+    "name": "プテラ（メガ）",
     "type1": "いわ",
     "type2": "ひこう",
     "baseStats": {
@@ -3110,20 +2928,6 @@
   {
     "id": 143,
     "name": "カビゴン",
-    "type1": "ノーマル",
-    "type2": "",
-    "baseStats": {
-      "h": 160,
-      "a": 110,
-      "b": 65,
-      "c": 65,
-      "d": 110,
-      "s": 30
-    }
-  },
-  {
-    "id": 143,
-    "name": "Snorlax-Gmax",
     "type1": "ノーマル",
     "type2": "",
     "baseStats": {
@@ -3151,7 +2955,7 @@
   },
   {
     "id": 144,
-    "name": "Articuno-Galar",
+    "name": "フリーザー（ガラル）",
     "type1": "エスパー",
     "type2": "ひこう",
     "baseStats": {
@@ -3179,7 +2983,7 @@
   },
   {
     "id": 145,
-    "name": "Zapdos-Galar",
+    "name": "サンダー（ガラル）",
     "type1": "かくとう",
     "type2": "ひこう",
     "baseStats": {
@@ -3207,7 +3011,7 @@
   },
   {
     "id": 146,
-    "name": "Moltres-Galar",
+    "name": "ファイヤー（ガラル）",
     "type1": "あく",
     "type2": "ひこう",
     "baseStats": {
@@ -3263,7 +3067,7 @@
   },
   {
     "id": 149,
-    "name": "Dragonite-Mega",
+    "name": "カイリュー（メガ）",
     "type1": "ドラゴン",
     "type2": "ひこう",
     "baseStats": {
@@ -3291,7 +3095,7 @@
   },
   {
     "id": 150,
-    "name": "Mewtwo-Mega-X",
+    "name": "ミュウツー（メガX）",
     "type1": "エスパー",
     "type2": "かくとう",
     "baseStats": {
@@ -3305,7 +3109,7 @@
   },
   {
     "id": 150,
-    "name": "Mewtwo-Mega-Y",
+    "name": "ミュウツー（メガY）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -3375,7 +3179,7 @@
   },
   {
     "id": 154,
-    "name": "Meganium-Mega",
+    "name": "メガニウム（メガ）",
     "type1": "くさ",
     "type2": "フェアリー",
     "baseStats": {
@@ -3431,7 +3235,7 @@
   },
   {
     "id": 157,
-    "name": "Typhlosion-Hisui",
+    "name": "バクフーン（ヒスイ）",
     "type1": "ほのお",
     "type2": "ゴースト",
     "baseStats": {
@@ -3487,7 +3291,7 @@
   },
   {
     "id": 160,
-    "name": "Feraligatr-Mega",
+    "name": "オーダイル（メガ）",
     "type1": "みず",
     "type2": "ドラゴン",
     "baseStats": {
@@ -3669,7 +3473,7 @@
   },
   {
     "id": 172,
-    "name": "Pichu-Spiky-eared",
+    "name": "ピチュー（Spiky-eared）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -3809,7 +3613,7 @@
   },
   {
     "id": 181,
-    "name": "Ampharos-Mega",
+    "name": "デンリュウ（メガ）",
     "type1": "でんき",
     "type2": "ドラゴン",
     "baseStats": {
@@ -4005,7 +3809,7 @@
   },
   {
     "id": 194,
-    "name": "Wooper-Paldea",
+    "name": "ウパー（パルデア）",
     "type1": "どく",
     "type2": "じめん",
     "baseStats": {
@@ -4089,7 +3893,7 @@
   },
   {
     "id": 199,
-    "name": "Slowking-Galar",
+    "name": "ヤドキング（ガラル）",
     "type1": "どく",
     "type2": "エスパー",
     "baseStats": {
@@ -4229,7 +4033,7 @@
   },
   {
     "id": 208,
-    "name": "Steelix-Mega",
+    "name": "ハガネール（メガ）",
     "type1": "はがね",
     "type2": "じめん",
     "baseStats": {
@@ -4285,7 +4089,7 @@
   },
   {
     "id": 211,
-    "name": "Qwilfish-Hisui",
+    "name": "ハリーセン（ヒスイ）",
     "type1": "あく",
     "type2": "どく",
     "baseStats": {
@@ -4313,7 +4117,7 @@
   },
   {
     "id": 212,
-    "name": "Scizor-Mega",
+    "name": "ハッサム（メガ）",
     "type1": "むし",
     "type2": "はがね",
     "baseStats": {
@@ -4355,7 +4159,7 @@
   },
   {
     "id": 214,
-    "name": "Heracross-Mega",
+    "name": "ヘラクロス（メガ）",
     "type1": "むし",
     "type2": "かくとう",
     "baseStats": {
@@ -4383,7 +4187,7 @@
   },
   {
     "id": 215,
-    "name": "Sneasel-Hisui",
+    "name": "ニューラ（ヒスイ）",
     "type1": "かくとう",
     "type2": "どく",
     "baseStats": {
@@ -4495,7 +4299,7 @@
   },
   {
     "id": 222,
-    "name": "Corsola-Galar",
+    "name": "サニーゴ（ガラル）",
     "type1": "ゴースト",
     "type2": "",
     "baseStats": {
@@ -4579,7 +4383,7 @@
   },
   {
     "id": 227,
-    "name": "Skarmory-Mega",
+    "name": "エアームド（メガ）",
     "type1": "はがね",
     "type2": "ひこう",
     "baseStats": {
@@ -4621,7 +4425,7 @@
   },
   {
     "id": 229,
-    "name": "Houndoom-Mega",
+    "name": "ヘルガー（メガ）",
     "type1": "あく",
     "type2": "ほのお",
     "baseStats": {
@@ -4901,7 +4705,7 @@
   },
   {
     "id": 248,
-    "name": "Tyranitar-Mega",
+    "name": "バンギラス（メガ）",
     "type1": "いわ",
     "type2": "あく",
     "baseStats": {
@@ -4999,7 +4803,7 @@
   },
   {
     "id": 254,
-    "name": "Sceptile-Mega",
+    "name": "ジュカイン（メガ）",
     "type1": "くさ",
     "type2": "ドラゴン",
     "baseStats": {
@@ -5055,7 +4859,7 @@
   },
   {
     "id": 257,
-    "name": "Blaziken-Mega",
+    "name": "バシャーモ（メガ）",
     "type1": "ほのお",
     "type2": "かくとう",
     "baseStats": {
@@ -5111,7 +4915,7 @@
   },
   {
     "id": 260,
-    "name": "Swampert-Mega",
+    "name": "ラグラージ（メガ）",
     "type1": "みず",
     "type2": "じめん",
     "baseStats": {
@@ -5167,7 +4971,7 @@
   },
   {
     "id": 263,
-    "name": "Zigzagoon-Galar",
+    "name": "ジグザグマ（ガラル）",
     "type1": "あく",
     "type2": "ノーマル",
     "baseStats": {
@@ -5195,7 +4999,7 @@
   },
   {
     "id": 264,
-    "name": "Linoone-Galar",
+    "name": "マッスグマ（ガラル）",
     "type1": "あく",
     "type2": "ノーマル",
     "baseStats": {
@@ -5461,7 +5265,7 @@
   },
   {
     "id": 282,
-    "name": "Gardevoir-Mega",
+    "name": "サーナイト（メガ）",
     "type1": "エスパー",
     "type2": "フェアリー",
     "baseStats": {
@@ -5755,7 +5559,7 @@
   },
   {
     "id": 302,
-    "name": "Sableye-Mega",
+    "name": "ヤミラミ（メガ）",
     "type1": "あく",
     "type2": "ゴースト",
     "baseStats": {
@@ -5783,7 +5587,7 @@
   },
   {
     "id": 303,
-    "name": "Mawile-Mega",
+    "name": "クチート（メガ）",
     "type1": "はがね",
     "type2": "フェアリー",
     "baseStats": {
@@ -5839,7 +5643,7 @@
   },
   {
     "id": 306,
-    "name": "Aggron-Mega",
+    "name": "ボスゴドラ（メガ）",
     "type1": "はがね",
     "type2": "",
     "baseStats": {
@@ -5881,7 +5685,7 @@
   },
   {
     "id": 308,
-    "name": "Medicham-Mega",
+    "name": "チャーレム（メガ）",
     "type1": "かくとう",
     "type2": "エスパー",
     "baseStats": {
@@ -5923,7 +5727,7 @@
   },
   {
     "id": 310,
-    "name": "Manectric-Mega",
+    "name": "ライボルト（メガ）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -6063,7 +5867,7 @@
   },
   {
     "id": 319,
-    "name": "Sharpedo-Mega",
+    "name": "サメハダー（メガ）",
     "type1": "みず",
     "type2": "あく",
     "baseStats": {
@@ -6133,7 +5937,7 @@
   },
   {
     "id": 323,
-    "name": "Camerupt-Mega",
+    "name": "バクーダ（メガ）",
     "type1": "ほのお",
     "type2": "じめん",
     "baseStats": {
@@ -6301,7 +6105,7 @@
   },
   {
     "id": 334,
-    "name": "Altaria-Mega",
+    "name": "チルタリス（メガ）",
     "type1": "ドラゴン",
     "type2": "フェアリー",
     "baseStats": {
@@ -6553,7 +6357,7 @@
   },
   {
     "id": 351,
-    "name": "Castform-Sunny",
+    "name": "ポワルン（Sunny）",
     "type1": "ほのお",
     "type2": "",
     "baseStats": {
@@ -6567,7 +6371,7 @@
   },
   {
     "id": 351,
-    "name": "Castform-Rainy",
+    "name": "ポワルン（Rainy）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -6581,7 +6385,7 @@
   },
   {
     "id": 351,
-    "name": "Castform-Snowy",
+    "name": "ポワルン（Snowy）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -6637,7 +6441,7 @@
   },
   {
     "id": 354,
-    "name": "Banette-Mega",
+    "name": "ジュペッタ（メガ）",
     "type1": "ゴースト",
     "type2": "",
     "baseStats": {
@@ -6707,7 +6511,7 @@
   },
   {
     "id": 358,
-    "name": "Chimecho-Mega",
+    "name": "チリーン（メガ）",
     "type1": "エスパー",
     "type2": "はがね",
     "baseStats": {
@@ -6735,7 +6539,7 @@
   },
   {
     "id": 359,
-    "name": "Absol-Mega",
+    "name": "アブソル（メガ）",
     "type1": "あく",
     "type2": "",
     "baseStats": {
@@ -6749,7 +6553,7 @@
   },
   {
     "id": 359,
-    "name": "Absol-Mega-Z",
+    "name": "アブソル（Mega-Z）",
     "type1": "あく",
     "type2": "ゴースト",
     "baseStats": {
@@ -6805,7 +6609,7 @@
   },
   {
     "id": 362,
-    "name": "Glalie-Mega",
+    "name": "オニゴーリ（メガ）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -6973,7 +6777,7 @@
   },
   {
     "id": 373,
-    "name": "Salamence-Mega",
+    "name": "ボーマンダ（メガ）",
     "type1": "ドラゴン",
     "type2": "ひこう",
     "baseStats": {
@@ -7029,7 +6833,7 @@
   },
   {
     "id": 376,
-    "name": "Metagross-Mega",
+    "name": "メタグロス（メガ）",
     "type1": "はがね",
     "type2": "エスパー",
     "baseStats": {
@@ -7099,7 +6903,7 @@
   },
   {
     "id": 380,
-    "name": "Latias-Mega",
+    "name": "ラティアス（メガ）",
     "type1": "ドラゴン",
     "type2": "エスパー",
     "baseStats": {
@@ -7127,7 +6931,7 @@
   },
   {
     "id": 381,
-    "name": "Latios-Mega",
+    "name": "ラティオス（メガ）",
     "type1": "ドラゴン",
     "type2": "エスパー",
     "baseStats": {
@@ -7155,7 +6959,7 @@
   },
   {
     "id": 382,
-    "name": "Kyogre-Primal",
+    "name": "カイオーガ（Primal）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -7183,7 +6987,7 @@
   },
   {
     "id": 383,
-    "name": "Groudon-Primal",
+    "name": "グラードン（Primal）",
     "type1": "じめん",
     "type2": "ほのお",
     "baseStats": {
@@ -7211,7 +7015,7 @@
   },
   {
     "id": 384,
-    "name": "Rayquaza-Mega",
+    "name": "レックウザ（メガ）",
     "type1": "ドラゴン",
     "type2": "ひこう",
     "baseStats": {
@@ -7253,7 +7057,7 @@
   },
   {
     "id": 386,
-    "name": "Deoxys-Attack",
+    "name": "デオキシス（Attack）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -7267,7 +7071,7 @@
   },
   {
     "id": 386,
-    "name": "Deoxys-Defense",
+    "name": "デオキシス（Defense）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -7281,7 +7085,7 @@
   },
   {
     "id": 386,
-    "name": "Deoxys-Speed",
+    "name": "デオキシス（Speed）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -7463,7 +7267,7 @@
   },
   {
     "id": 398,
-    "name": "Staraptor-Mega",
+    "name": "ムクホーク（メガ）",
     "type1": "かくとう",
     "type2": "ひこう",
     "baseStats": {
@@ -7687,7 +7491,7 @@
   },
   {
     "id": 413,
-    "name": "Wormadam-Sandy",
+    "name": "ミノマダム（Sandy）",
     "type1": "むし",
     "type2": "じめん",
     "baseStats": {
@@ -7701,7 +7505,7 @@
   },
   {
     "id": 413,
-    "name": "Wormadam-Trash",
+    "name": "ミノマダム（Trash）",
     "type1": "むし",
     "type2": "はがね",
     "baseStats": {
@@ -7827,7 +7631,7 @@
   },
   {
     "id": 421,
-    "name": "Cherrim-Sunshine",
+    "name": "チェリム（Sunshine）",
     "type1": "くさ",
     "type2": "",
     "baseStats": {
@@ -7939,7 +7743,7 @@
   },
   {
     "id": 428,
-    "name": "Lopunny-Mega",
+    "name": "ミミロップ（メガ）",
     "type1": "ノーマル",
     "type2": "かくとう",
     "baseStats": {
@@ -8191,7 +7995,7 @@
   },
   {
     "id": 445,
-    "name": "Garchomp-Mega",
+    "name": "ガブリアス（メガ）",
     "type1": "ドラゴン",
     "type2": "じめん",
     "baseStats": {
@@ -8205,7 +8009,7 @@
   },
   {
     "id": 445,
-    "name": "Garchomp-Mega-Z",
+    "name": "ガブリアス（Mega-Z）",
     "type1": "ドラゴン",
     "type2": "",
     "baseStats": {
@@ -8261,7 +8065,7 @@
   },
   {
     "id": 448,
-    "name": "Lucario-Mega",
+    "name": "ルカリオ（メガ）",
     "type1": "かくとう",
     "type2": "はがね",
     "baseStats": {
@@ -8275,7 +8079,7 @@
   },
   {
     "id": 448,
-    "name": "Lucario-Mega-Z",
+    "name": "ルカリオ（Mega-Z）",
     "type1": "かくとう",
     "type2": "はがね",
     "baseStats": {
@@ -8457,7 +8261,7 @@
   },
   {
     "id": 460,
-    "name": "Abomasnow-Mega",
+    "name": "ユキノオー（メガ）",
     "type1": "くさ",
     "type2": "こおり",
     "baseStats": {
@@ -8681,7 +8485,7 @@
   },
   {
     "id": 475,
-    "name": "Gallade-Mega",
+    "name": "エルレイド（メガ）",
     "type1": "エスパー",
     "type2": "かくとう",
     "baseStats": {
@@ -8737,7 +8541,7 @@
   },
   {
     "id": 478,
-    "name": "Froslass-Mega",
+    "name": "ユキメノコ（メガ）",
     "type1": "こおり",
     "type2": "ゴースト",
     "baseStats": {
@@ -8765,7 +8569,7 @@
   },
   {
     "id": 479,
-    "name": "Rotom-Heat",
+    "name": "ロトム（Heat）",
     "type1": "でんき",
     "type2": "ほのお",
     "baseStats": {
@@ -8779,7 +8583,7 @@
   },
   {
     "id": 479,
-    "name": "Rotom-Wash",
+    "name": "ロトム（Wash）",
     "type1": "でんき",
     "type2": "みず",
     "baseStats": {
@@ -8793,7 +8597,7 @@
   },
   {
     "id": 479,
-    "name": "Rotom-Frost",
+    "name": "ロトム（Frost）",
     "type1": "でんき",
     "type2": "こおり",
     "baseStats": {
@@ -8807,7 +8611,7 @@
   },
   {
     "id": 479,
-    "name": "Rotom-Fan",
+    "name": "ロトム（Fan）",
     "type1": "でんき",
     "type2": "ひこう",
     "baseStats": {
@@ -8821,7 +8625,7 @@
   },
   {
     "id": 479,
-    "name": "Rotom-Mow",
+    "name": "ロトム（Mow）",
     "type1": "でんき",
     "type2": "くさ",
     "baseStats": {
@@ -8891,7 +8695,7 @@
   },
   {
     "id": 483,
-    "name": "Dialga-Origin",
+    "name": "ディアルガ（オリジン）",
     "type1": "はがね",
     "type2": "ドラゴン",
     "baseStats": {
@@ -8919,7 +8723,7 @@
   },
   {
     "id": 484,
-    "name": "Palkia-Origin",
+    "name": "パルキア（オリジン）",
     "type1": "みず",
     "type2": "ドラゴン",
     "baseStats": {
@@ -8947,7 +8751,7 @@
   },
   {
     "id": 485,
-    "name": "Heatran-Mega",
+    "name": "ヒードラン（メガ）",
     "type1": "ほのお",
     "type2": "はがね",
     "baseStats": {
@@ -8989,7 +8793,7 @@
   },
   {
     "id": 487,
-    "name": "Giratina-Origin",
+    "name": "ギラティナ（オリジン）",
     "type1": "ゴースト",
     "type2": "ドラゴン",
     "baseStats": {
@@ -9059,7 +8863,7 @@
   },
   {
     "id": 491,
-    "name": "Darkrai-Mega",
+    "name": "ダークライ（メガ）",
     "type1": "あく",
     "type2": "",
     "baseStats": {
@@ -9087,7 +8891,7 @@
   },
   {
     "id": 492,
-    "name": "Shaymin-Sky",
+    "name": "シェイミ（Sky）",
     "type1": "くさ",
     "type2": "ひこう",
     "baseStats": {
@@ -9115,7 +8919,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Bug",
+    "name": "アルセウス（Bug）",
     "type1": "むし",
     "type2": "",
     "baseStats": {
@@ -9129,7 +8933,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Dark",
+    "name": "アルセウス（Dark）",
     "type1": "あく",
     "type2": "",
     "baseStats": {
@@ -9143,7 +8947,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Dragon",
+    "name": "アルセウス（Dragon）",
     "type1": "ドラゴン",
     "type2": "",
     "baseStats": {
@@ -9157,7 +8961,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Electric",
+    "name": "アルセウス（Electric）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -9171,7 +8975,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Fairy",
+    "name": "アルセウス（Fairy）",
     "type1": "フェアリー",
     "type2": "",
     "baseStats": {
@@ -9185,7 +8989,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Fighting",
+    "name": "アルセウス（Fighting）",
     "type1": "かくとう",
     "type2": "",
     "baseStats": {
@@ -9199,7 +9003,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Fire",
+    "name": "アルセウス（Fire）",
     "type1": "ほのお",
     "type2": "",
     "baseStats": {
@@ -9213,7 +9017,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Flying",
+    "name": "アルセウス（Flying）",
     "type1": "ひこう",
     "type2": "",
     "baseStats": {
@@ -9227,7 +9031,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Ghost",
+    "name": "アルセウス（Ghost）",
     "type1": "ゴースト",
     "type2": "",
     "baseStats": {
@@ -9241,7 +9045,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Grass",
+    "name": "アルセウス（Grass）",
     "type1": "くさ",
     "type2": "",
     "baseStats": {
@@ -9255,7 +9059,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Ground",
+    "name": "アルセウス（Ground）",
     "type1": "じめん",
     "type2": "",
     "baseStats": {
@@ -9269,7 +9073,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Ice",
+    "name": "アルセウス（Ice）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -9283,7 +9087,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Poison",
+    "name": "アルセウス（Poison）",
     "type1": "どく",
     "type2": "",
     "baseStats": {
@@ -9297,7 +9101,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Psychic",
+    "name": "アルセウス（Psychic）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -9311,7 +9115,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Rock",
+    "name": "アルセウス（Rock）",
     "type1": "いわ",
     "type2": "",
     "baseStats": {
@@ -9325,7 +9129,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Steel",
+    "name": "アルセウス（Steel）",
     "type1": "はがね",
     "type2": "",
     "baseStats": {
@@ -9339,7 +9143,7 @@
   },
   {
     "id": 493,
-    "name": "Arceus-Water",
+    "name": "アルセウス（Water）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -9451,7 +9255,7 @@
   },
   {
     "id": 500,
-    "name": "Emboar-Mega",
+    "name": "エンブオー（メガ）",
     "type1": "ほのお",
     "type2": "かくとう",
     "baseStats": {
@@ -9507,7 +9311,7 @@
   },
   {
     "id": 503,
-    "name": "Samurott-Hisui",
+    "name": "ダイケンキ（ヒスイ）",
     "type1": "みず",
     "type2": "あく",
     "baseStats": {
@@ -9899,7 +9703,7 @@
   },
   {
     "id": 530,
-    "name": "Excadrill-Mega",
+    "name": "ドリュウズ（メガ）",
     "type1": "じめん",
     "type2": "はがね",
     "baseStats": {
@@ -9927,7 +9731,7 @@
   },
   {
     "id": 531,
-    "name": "Audino-Mega",
+    "name": "タブンネ（メガ）",
     "type1": "ノーマル",
     "type2": "フェアリー",
     "baseStats": {
@@ -10137,7 +9941,7 @@
   },
   {
     "id": 545,
-    "name": "Scolipede-Mega",
+    "name": "ペンドラー（メガ）",
     "type1": "むし",
     "type2": "どく",
     "baseStats": {
@@ -10207,7 +10011,7 @@
   },
   {
     "id": 549,
-    "name": "Lilligant-Hisui",
+    "name": "ドレディア（ヒスイ）",
     "type1": "くさ",
     "type2": "かくとう",
     "baseStats": {
@@ -10235,7 +10039,7 @@
   },
   {
     "id": 550,
-    "name": "Basculin-Blue-Striped",
+    "name": "バスラオ（Blue-Striped）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -10249,7 +10053,7 @@
   },
   {
     "id": 550,
-    "name": "Basculin-White-Striped",
+    "name": "バスラオ（White-Striped）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -10319,7 +10123,7 @@
   },
   {
     "id": 554,
-    "name": "Darumaka-Galar",
+    "name": "ダルマッカ（ガラル）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -10347,7 +10151,7 @@
   },
   {
     "id": 555,
-    "name": "Darmanitan-Zen",
+    "name": "ヒヒダルマ（Zen）",
     "type1": "ほのお",
     "type2": "エスパー",
     "baseStats": {
@@ -10361,7 +10165,7 @@
   },
   {
     "id": 555,
-    "name": "Darmanitan-Galar",
+    "name": "ヒヒダルマ（ガラル）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -10375,7 +10179,7 @@
   },
   {
     "id": 555,
-    "name": "Darmanitan-Galar-Zen",
+    "name": "ヒヒダルマ（Galar-Zen）",
     "type1": "こおり",
     "type2": "ほのお",
     "baseStats": {
@@ -10459,7 +10263,7 @@
   },
   {
     "id": 560,
-    "name": "Scrafty-Mega",
+    "name": "ズルズキン（メガ）",
     "type1": "あく",
     "type2": "かくとう",
     "baseStats": {
@@ -10501,7 +10305,7 @@
   },
   {
     "id": 562,
-    "name": "Yamask-Galar",
+    "name": "デスマス（ガラル）",
     "type1": "じめん",
     "type2": "ゴースト",
     "baseStats": {
@@ -10612,20 +10416,6 @@
     }
   },
   {
-    "id": 569,
-    "name": "Garbodor-Gmax",
-    "type1": "どく",
-    "type2": "",
-    "baseStats": {
-      "h": 80,
-      "a": 95,
-      "b": 82,
-      "c": 60,
-      "d": 82,
-      "s": 75
-    }
-  },
-  {
     "id": 570,
     "name": "ゾロア",
     "type1": "あく",
@@ -10641,7 +10431,7 @@
   },
   {
     "id": 570,
-    "name": "Zorua-Hisui",
+    "name": "ゾロア（ヒスイ）",
     "type1": "ノーマル",
     "type2": "ゴースト",
     "baseStats": {
@@ -10669,7 +10459,7 @@
   },
   {
     "id": 571,
-    "name": "Zoroark-Hisui",
+    "name": "ゾロアーク（ヒスイ）",
     "type1": "ノーマル",
     "type2": "ゴースト",
     "baseStats": {
@@ -11145,7 +10935,7 @@
   },
   {
     "id": 604,
-    "name": "Eelektross-Mega",
+    "name": "シビルドン（メガ）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -11229,7 +11019,7 @@
   },
   {
     "id": 609,
-    "name": "Chandelure-Mega",
+    "name": "シャンデラ（メガ）",
     "type1": "ゴースト",
     "type2": "ほのお",
     "baseStats": {
@@ -11369,7 +11159,7 @@
   },
   {
     "id": 618,
-    "name": "Stunfisk-Galar",
+    "name": "マッギョ（ガラル）",
     "type1": "じめん",
     "type2": "はがね",
     "baseStats": {
@@ -11453,7 +11243,7 @@
   },
   {
     "id": 623,
-    "name": "Golurk-Mega",
+    "name": "ゴルーグ（メガ）",
     "type1": "じめん",
     "type2": "ゴースト",
     "baseStats": {
@@ -11537,7 +11327,7 @@
   },
   {
     "id": 628,
-    "name": "Braviary-Hisui",
+    "name": "ウォーグル（ヒスイ）",
     "type1": "エスパー",
     "type2": "ひこう",
     "baseStats": {
@@ -11733,7 +11523,7 @@
   },
   {
     "id": 641,
-    "name": "Tornadus-Therian",
+    "name": "トルネロス（霊獣）",
     "type1": "ひこう",
     "type2": "",
     "baseStats": {
@@ -11761,7 +11551,7 @@
   },
   {
     "id": 642,
-    "name": "Thundurus-Therian",
+    "name": "ボルトロス（霊獣）",
     "type1": "でんき",
     "type2": "ひこう",
     "baseStats": {
@@ -11817,7 +11607,7 @@
   },
   {
     "id": 645,
-    "name": "Landorus-Therian",
+    "name": "ランドロス（霊獣）",
     "type1": "じめん",
     "type2": "ひこう",
     "baseStats": {
@@ -11845,7 +11635,7 @@
   },
   {
     "id": 646,
-    "name": "Kyurem-Black",
+    "name": "キュレム（Black）",
     "type1": "ドラゴン",
     "type2": "こおり",
     "baseStats": {
@@ -11859,7 +11649,7 @@
   },
   {
     "id": 646,
-    "name": "Kyurem-White",
+    "name": "キュレム（White）",
     "type1": "ドラゴン",
     "type2": "こおり",
     "baseStats": {
@@ -11887,7 +11677,7 @@
   },
   {
     "id": 647,
-    "name": "Keldeo-Resolute",
+    "name": "ケルディオ（Resolute）",
     "type1": "みず",
     "type2": "かくとう",
     "baseStats": {
@@ -11915,7 +11705,7 @@
   },
   {
     "id": 648,
-    "name": "Meloetta-Pirouette",
+    "name": "メロエッタ（Pirouette）",
     "type1": "ノーマル",
     "type2": "かくとう",
     "baseStats": {
@@ -11943,7 +11733,7 @@
   },
   {
     "id": 649,
-    "name": "Genesect-Douse",
+    "name": "ゲノセクト（Douse）",
     "type1": "むし",
     "type2": "はがね",
     "baseStats": {
@@ -11957,7 +11747,7 @@
   },
   {
     "id": 649,
-    "name": "Genesect-Shock",
+    "name": "ゲノセクト（Shock）",
     "type1": "むし",
     "type2": "はがね",
     "baseStats": {
@@ -11971,7 +11761,7 @@
   },
   {
     "id": 649,
-    "name": "Genesect-Burn",
+    "name": "ゲノセクト（Burn）",
     "type1": "むし",
     "type2": "はがね",
     "baseStats": {
@@ -11985,7 +11775,7 @@
   },
   {
     "id": 649,
-    "name": "Genesect-Chill",
+    "name": "ゲノセクト（Chill）",
     "type1": "むし",
     "type2": "はがね",
     "baseStats": {
@@ -12041,7 +11831,7 @@
   },
   {
     "id": 652,
-    "name": "Chesnaught-Mega",
+    "name": "ブリガロン（メガ）",
     "type1": "くさ",
     "type2": "かくとう",
     "baseStats": {
@@ -12097,7 +11887,7 @@
   },
   {
     "id": 655,
-    "name": "Delphox-Mega",
+    "name": "マフォクシー（メガ）",
     "type1": "ほのお",
     "type2": "エスパー",
     "baseStats": {
@@ -12153,7 +11943,7 @@
   },
   {
     "id": 658,
-    "name": "Greninja-Bond",
+    "name": "ゲッコウガ（Bond）",
     "type1": "みず",
     "type2": "あく",
     "baseStats": {
@@ -12167,7 +11957,7 @@
   },
   {
     "id": 658,
-    "name": "Greninja-Ash",
+    "name": "ゲッコウガ（Ash）",
     "type1": "みず",
     "type2": "あく",
     "baseStats": {
@@ -12181,7 +11971,7 @@
   },
   {
     "id": 658,
-    "name": "Greninja-Mega",
+    "name": "ゲッコウガ（メガ）",
     "type1": "みず",
     "type2": "あく",
     "baseStats": {
@@ -12307,7 +12097,7 @@
   },
   {
     "id": 666,
-    "name": "Vivillon-Fancy",
+    "name": "ビビヨン（Fancy）",
     "type1": "むし",
     "type2": "ひこう",
     "baseStats": {
@@ -12321,7 +12111,7 @@
   },
   {
     "id": 666,
-    "name": "Vivillon-Pokeball",
+    "name": "ビビヨン（Pokeball）",
     "type1": "むし",
     "type2": "ひこう",
     "baseStats": {
@@ -12363,7 +12153,7 @@
   },
   {
     "id": 668,
-    "name": "Pyroar-Mega",
+    "name": "カエンジシ（メガ）",
     "type1": "ほのお",
     "type2": "ノーマル",
     "baseStats": {
@@ -12405,7 +12195,7 @@
   },
   {
     "id": 670,
-    "name": "Floette-Eternal",
+    "name": "フラエッテ（Eternal）",
     "type1": "フェアリー",
     "type2": "",
     "baseStats": {
@@ -12419,7 +12209,7 @@
   },
   {
     "id": 670,
-    "name": "Floette-Mega",
+    "name": "フラエッテ（メガ）",
     "type1": "フェアリー",
     "type2": "",
     "baseStats": {
@@ -12545,7 +12335,7 @@
   },
   {
     "id": 678,
-    "name": "Meowstic-F",
+    "name": "ニャオニクス（F）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -12559,7 +12349,7 @@
   },
   {
     "id": 678,
-    "name": "Meowstic-M-Mega",
+    "name": "ニャオニクス（M-Mega）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -12573,7 +12363,7 @@
   },
   {
     "id": 678,
-    "name": "Meowstic-F-Mega",
+    "name": "ニャオニクス（F-Mega）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -12629,7 +12419,7 @@
   },
   {
     "id": 681,
-    "name": "Aegislash-Blade",
+    "name": "ギルガルド（Blade）",
     "type1": "はがね",
     "type2": "ゴースト",
     "baseStats": {
@@ -12727,7 +12517,7 @@
   },
   {
     "id": 687,
-    "name": "Malamar-Mega",
+    "name": "カラマネロ（メガ）",
     "type1": "あく",
     "type2": "エスパー",
     "baseStats": {
@@ -12769,7 +12559,7 @@
   },
   {
     "id": 689,
-    "name": "Barbaracle-Mega",
+    "name": "ガメノデス（メガ）",
     "type1": "いわ",
     "type2": "かくとう",
     "baseStats": {
@@ -12811,7 +12601,7 @@
   },
   {
     "id": 691,
-    "name": "Dragalge-Mega",
+    "name": "ドラミドロ（メガ）",
     "type1": "どく",
     "type2": "ドラゴン",
     "baseStats": {
@@ -12965,7 +12755,7 @@
   },
   {
     "id": 701,
-    "name": "Hawlucha-Mega",
+    "name": "ルチャブル（メガ）",
     "type1": "かくとう",
     "type2": "ひこう",
     "baseStats": {
@@ -13035,7 +12825,7 @@
   },
   {
     "id": 705,
-    "name": "Sliggoo-Hisui",
+    "name": "ヌメイル（ヒスイ）",
     "type1": "はがね",
     "type2": "ドラゴン",
     "baseStats": {
@@ -13063,7 +12853,7 @@
   },
   {
     "id": 706,
-    "name": "Goodra-Hisui",
+    "name": "ヌメルゴン（ヒスイ）",
     "type1": "はがね",
     "type2": "ドラゴン",
     "baseStats": {
@@ -13133,7 +12923,7 @@
   },
   {
     "id": 710,
-    "name": "Pumpkaboo-Small",
+    "name": "バケッチャ（Small）",
     "type1": "ゴースト",
     "type2": "くさ",
     "baseStats": {
@@ -13147,7 +12937,7 @@
   },
   {
     "id": 710,
-    "name": "Pumpkaboo-Large",
+    "name": "バケッチャ（Large）",
     "type1": "ゴースト",
     "type2": "くさ",
     "baseStats": {
@@ -13161,7 +12951,7 @@
   },
   {
     "id": 710,
-    "name": "Pumpkaboo-Super",
+    "name": "バケッチャ（Super）",
     "type1": "ゴースト",
     "type2": "くさ",
     "baseStats": {
@@ -13189,7 +12979,7 @@
   },
   {
     "id": 711,
-    "name": "Gourgeist-Small",
+    "name": "パンプジン（Small）",
     "type1": "ゴースト",
     "type2": "くさ",
     "baseStats": {
@@ -13203,7 +12993,7 @@
   },
   {
     "id": 711,
-    "name": "Gourgeist-Large",
+    "name": "パンプジン（Large）",
     "type1": "ゴースト",
     "type2": "くさ",
     "baseStats": {
@@ -13217,7 +13007,7 @@
   },
   {
     "id": 711,
-    "name": "Gourgeist-Super",
+    "name": "パンプジン（Super）",
     "type1": "ゴースト",
     "type2": "くさ",
     "baseStats": {
@@ -13259,7 +13049,7 @@
   },
   {
     "id": 713,
-    "name": "Avalugg-Hisui",
+    "name": "クレベース（ヒスイ）",
     "type1": "こおり",
     "type2": "いわ",
     "baseStats": {
@@ -13315,7 +13105,7 @@
   },
   {
     "id": 716,
-    "name": "Xerneas-Neutral",
+    "name": "ゼルネアス（Neutral）",
     "type1": "フェアリー",
     "type2": "",
     "baseStats": {
@@ -13357,7 +13147,7 @@
   },
   {
     "id": 718,
-    "name": "Zygarde-10%",
+    "name": "ジガルデ（10%）",
     "type1": "ドラゴン",
     "type2": "じめん",
     "baseStats": {
@@ -13371,7 +13161,7 @@
   },
   {
     "id": 718,
-    "name": "Zygarde-Complete",
+    "name": "ジガルデ（Complete）",
     "type1": "ドラゴン",
     "type2": "じめん",
     "baseStats": {
@@ -13385,7 +13175,7 @@
   },
   {
     "id": 718,
-    "name": "Zygarde-Mega",
+    "name": "ジガルデ（メガ）",
     "type1": "ドラゴン",
     "type2": "じめん",
     "baseStats": {
@@ -13413,7 +13203,7 @@
   },
   {
     "id": 719,
-    "name": "Diancie-Mega",
+    "name": "ディアンシー（メガ）",
     "type1": "いわ",
     "type2": "フェアリー",
     "baseStats": {
@@ -13441,7 +13231,7 @@
   },
   {
     "id": 720,
-    "name": "Hoopa-Unbound",
+    "name": "フーパ（Unbound）",
     "type1": "エスパー",
     "type2": "あく",
     "baseStats": {
@@ -13511,7 +13301,7 @@
   },
   {
     "id": 724,
-    "name": "Decidueye-Hisui",
+    "name": "ジュナイパー（ヒスイ）",
     "type1": "くさ",
     "type2": "かくとう",
     "baseStats": {
@@ -13678,20 +13468,6 @@
     }
   },
   {
-    "id": 735,
-    "name": "Gumshoos-Totem",
-    "type1": "ノーマル",
-    "type2": "",
-    "baseStats": {
-      "h": 88,
-      "a": 110,
-      "b": 60,
-      "c": 55,
-      "d": 60,
-      "s": 45
-    }
-  },
-  {
     "id": 736,
     "name": "アゴジムシ",
     "type1": "むし",
@@ -13734,20 +13510,6 @@
     }
   },
   {
-    "id": 738,
-    "name": "Vikavolt-Totem",
-    "type1": "むし",
-    "type2": "でんき",
-    "baseStats": {
-      "h": 77,
-      "a": 70,
-      "b": 90,
-      "c": 145,
-      "d": 75,
-      "s": 43
-    }
-  },
-  {
     "id": 739,
     "name": "マケンカニ",
     "type1": "かくとう",
@@ -13777,7 +13539,7 @@
   },
   {
     "id": 740,
-    "name": "Crabominable-Mega",
+    "name": "ケケンカニ（メガ）",
     "type1": "かくとう",
     "type2": "こおり",
     "baseStats": {
@@ -13805,7 +13567,7 @@
   },
   {
     "id": 741,
-    "name": "Oricorio-Pom-Pom",
+    "name": "オドリドリ（Pom-Pom）",
     "type1": "でんき",
     "type2": "ひこう",
     "baseStats": {
@@ -13819,7 +13581,7 @@
   },
   {
     "id": 741,
-    "name": "Oricorio-Pa'u",
+    "name": "オドリドリ（Pa'u）",
     "type1": "エスパー",
     "type2": "ひこう",
     "baseStats": {
@@ -13833,7 +13595,7 @@
   },
   {
     "id": 741,
-    "name": "Oricorio-Sensu",
+    "name": "オドリドリ（Sensu）",
     "type1": "ゴースト",
     "type2": "ひこう",
     "baseStats": {
@@ -13874,20 +13636,6 @@
     }
   },
   {
-    "id": 743,
-    "name": "Ribombee-Totem",
-    "type1": "むし",
-    "type2": "フェアリー",
-    "baseStats": {
-      "h": 60,
-      "a": 55,
-      "b": 60,
-      "c": 95,
-      "d": 70,
-      "s": 124
-    }
-  },
-  {
     "id": 744,
     "name": "イワンコ",
     "type1": "いわ",
@@ -13903,7 +13651,7 @@
   },
   {
     "id": 744,
-    "name": "Rockruff-Dusk",
+    "name": "イワンコ（Dusk）",
     "type1": "いわ",
     "type2": "",
     "baseStats": {
@@ -13931,7 +13679,7 @@
   },
   {
     "id": 745,
-    "name": "Lycanroc-Midnight",
+    "name": "ルガルガン（Midnight）",
     "type1": "いわ",
     "type2": "",
     "baseStats": {
@@ -13945,7 +13693,7 @@
   },
   {
     "id": 745,
-    "name": "Lycanroc-Dusk",
+    "name": "ルガルガン（Dusk）",
     "type1": "いわ",
     "type2": "",
     "baseStats": {
@@ -13973,7 +13721,7 @@
   },
   {
     "id": 746,
-    "name": "Wishiwashi-School",
+    "name": "ヨワシ（School）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -14070,20 +13818,6 @@
     }
   },
   {
-    "id": 752,
-    "name": "Araquanid-Totem",
-    "type1": "みず",
-    "type2": "むし",
-    "baseStats": {
-      "h": 68,
-      "a": 70,
-      "b": 92,
-      "c": 50,
-      "d": 132,
-      "s": 42
-    }
-  },
-  {
     "id": 753,
     "name": "カリキリ",
     "type1": "くさ",
@@ -14100,20 +13834,6 @@
   {
     "id": 754,
     "name": "ラランテス",
-    "type1": "くさ",
-    "type2": "",
-    "baseStats": {
-      "h": 70,
-      "a": 105,
-      "b": 90,
-      "c": 80,
-      "d": 90,
-      "s": 45
-    }
-  },
-  {
-    "id": 754,
-    "name": "Lurantis-Totem",
     "type1": "くさ",
     "type2": "",
     "baseStats": {
@@ -14170,20 +13890,6 @@
   {
     "id": 758,
     "name": "エンニュート",
-    "type1": "どく",
-    "type2": "ほのお",
-    "baseStats": {
-      "h": 68,
-      "a": 64,
-      "b": 60,
-      "c": 111,
-      "d": 60,
-      "s": 117
-    }
-  },
-  {
-    "id": 758,
-    "name": "Salazzle-Totem",
     "type1": "どく",
     "type2": "ほのお",
     "baseStats": {
@@ -14337,7 +14043,7 @@
   },
   {
     "id": 768,
-    "name": "Golisopod-Mega",
+    "name": "グソクムシャ（メガ）",
     "type1": "むし",
     "type2": "はがね",
     "baseStats": {
@@ -14421,7 +14127,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Bug",
+    "name": "シルヴァディ（Bug）",
     "type1": "むし",
     "type2": "",
     "baseStats": {
@@ -14435,7 +14141,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Dark",
+    "name": "シルヴァディ（Dark）",
     "type1": "あく",
     "type2": "",
     "baseStats": {
@@ -14449,7 +14155,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Dragon",
+    "name": "シルヴァディ（Dragon）",
     "type1": "ドラゴン",
     "type2": "",
     "baseStats": {
@@ -14463,7 +14169,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Electric",
+    "name": "シルヴァディ（Electric）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -14477,7 +14183,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Fairy",
+    "name": "シルヴァディ（Fairy）",
     "type1": "フェアリー",
     "type2": "",
     "baseStats": {
@@ -14491,7 +14197,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Fighting",
+    "name": "シルヴァディ（Fighting）",
     "type1": "かくとう",
     "type2": "",
     "baseStats": {
@@ -14505,7 +14211,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Fire",
+    "name": "シルヴァディ（Fire）",
     "type1": "ほのお",
     "type2": "",
     "baseStats": {
@@ -14519,7 +14225,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Flying",
+    "name": "シルヴァディ（Flying）",
     "type1": "ひこう",
     "type2": "",
     "baseStats": {
@@ -14533,7 +14239,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Ghost",
+    "name": "シルヴァディ（Ghost）",
     "type1": "ゴースト",
     "type2": "",
     "baseStats": {
@@ -14547,7 +14253,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Grass",
+    "name": "シルヴァディ（Grass）",
     "type1": "くさ",
     "type2": "",
     "baseStats": {
@@ -14561,7 +14267,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Ground",
+    "name": "シルヴァディ（Ground）",
     "type1": "じめん",
     "type2": "",
     "baseStats": {
@@ -14575,7 +14281,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Ice",
+    "name": "シルヴァディ（Ice）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -14589,7 +14295,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Poison",
+    "name": "シルヴァディ（Poison）",
     "type1": "どく",
     "type2": "",
     "baseStats": {
@@ -14603,7 +14309,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Psychic",
+    "name": "シルヴァディ（Psychic）",
     "type1": "エスパー",
     "type2": "",
     "baseStats": {
@@ -14617,7 +14323,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Rock",
+    "name": "シルヴァディ（Rock）",
     "type1": "いわ",
     "type2": "",
     "baseStats": {
@@ -14631,7 +14337,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Steel",
+    "name": "シルヴァディ（Steel）",
     "type1": "はがね",
     "type2": "",
     "baseStats": {
@@ -14645,7 +14351,7 @@
   },
   {
     "id": 773,
-    "name": "Silvally-Water",
+    "name": "シルヴァディ（Water）",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -14673,7 +14379,7 @@
   },
   {
     "id": 774,
-    "name": "Minior-Meteor",
+    "name": "メテノ（Meteor）",
     "type1": "いわ",
     "type2": "ひこう",
     "baseStats": {
@@ -14728,20 +14434,6 @@
     }
   },
   {
-    "id": 777,
-    "name": "Togedemaru-Totem",
-    "type1": "でんき",
-    "type2": "はがね",
-    "baseStats": {
-      "h": 65,
-      "a": 98,
-      "b": 63,
-      "c": 40,
-      "d": 73,
-      "s": 96
-    }
-  },
-  {
     "id": 778,
     "name": "ミミッキュ",
     "type1": "ゴースト",
@@ -14757,35 +14449,7 @@
   },
   {
     "id": 778,
-    "name": "Mimikyu-Busted",
-    "type1": "ゴースト",
-    "type2": "フェアリー",
-    "baseStats": {
-      "h": 55,
-      "a": 90,
-      "b": 80,
-      "c": 50,
-      "d": 105,
-      "s": 96
-    }
-  },
-  {
-    "id": 778,
-    "name": "Mimikyu-Totem",
-    "type1": "ゴースト",
-    "type2": "フェアリー",
-    "baseStats": {
-      "h": 55,
-      "a": 90,
-      "b": 80,
-      "c": 50,
-      "d": 105,
-      "s": 96
-    }
-  },
-  {
-    "id": 778,
-    "name": "Mimikyu-Busted-Totem",
+    "name": "ミミッキュ（Busted）",
     "type1": "ゴースト",
     "type2": "フェアリー",
     "baseStats": {
@@ -14827,7 +14491,7 @@
   },
   {
     "id": 780,
-    "name": "Drampa-Mega",
+    "name": "ジジーロン（メガ）",
     "type1": "ノーマル",
     "type2": "ドラゴン",
     "baseStats": {
@@ -14884,20 +14548,6 @@
   {
     "id": 784,
     "name": "ジャラランガ",
-    "type1": "ドラゴン",
-    "type2": "かくとう",
-    "baseStats": {
-      "h": 75,
-      "a": 110,
-      "b": 125,
-      "c": 100,
-      "d": 105,
-      "s": 85
-    }
-  },
-  {
-    "id": 784,
-    "name": "Kommo-o-Totem",
     "type1": "ドラゴン",
     "type2": "かくとう",
     "baseStats": {
@@ -15135,7 +14785,7 @@
   },
   {
     "id": 800,
-    "name": "Necrozma-Dusk-Mane",
+    "name": "ネクロズマ（Dusk-Mane）",
     "type1": "エスパー",
     "type2": "はがね",
     "baseStats": {
@@ -15149,7 +14799,7 @@
   },
   {
     "id": 800,
-    "name": "Necrozma-Dawn-Wings",
+    "name": "ネクロズマ（Dawn-Wings）",
     "type1": "エスパー",
     "type2": "ゴースト",
     "baseStats": {
@@ -15163,7 +14813,7 @@
   },
   {
     "id": 800,
-    "name": "Necrozma-Ultra",
+    "name": "ネクロズマ（Ultra）",
     "type1": "エスパー",
     "type2": "ドラゴン",
     "baseStats": {
@@ -15191,7 +14841,7 @@
   },
   {
     "id": 801,
-    "name": "Magearna-Original",
+    "name": "マギアナ（Original）",
     "type1": "はがね",
     "type2": "フェアリー",
     "baseStats": {
@@ -15205,7 +14855,7 @@
   },
   {
     "id": 801,
-    "name": "Magearna-Mega",
+    "name": "マギアナ（メガ）",
     "type1": "はがね",
     "type2": "フェアリー",
     "baseStats": {
@@ -15219,7 +14869,7 @@
   },
   {
     "id": 801,
-    "name": "Magearna-Original-Mega",
+    "name": "マギアナ（Original-Mega）",
     "type1": "はがね",
     "type2": "フェアリー",
     "baseStats": {
@@ -15317,7 +14967,7 @@
   },
   {
     "id": 807,
-    "name": "Zeraora-Mega",
+    "name": "ゼラオラ（メガ）",
     "type1": "でんき",
     "type2": "",
     "baseStats": {
@@ -15346,20 +14996,6 @@
   {
     "id": 809,
     "name": "メルメタル",
-    "type1": "はがね",
-    "type2": "",
-    "baseStats": {
-      "h": 135,
-      "a": 143,
-      "b": 143,
-      "c": 80,
-      "d": 65,
-      "s": 34
-    }
-  },
-  {
-    "id": 809,
-    "name": "Melmetal-Gmax",
     "type1": "はがね",
     "type2": "",
     "baseStats": {
@@ -15414,20 +15050,6 @@
     }
   },
   {
-    "id": 812,
-    "name": "Rillaboom-Gmax",
-    "type1": "くさ",
-    "type2": "",
-    "baseStats": {
-      "h": 100,
-      "a": 125,
-      "b": 90,
-      "c": 60,
-      "d": 70,
-      "s": 85
-    }
-  },
-  {
     "id": 813,
     "name": "ヒバニー",
     "type1": "ほのお",
@@ -15470,20 +15092,6 @@
     }
   },
   {
-    "id": 815,
-    "name": "Cinderace-Gmax",
-    "type1": "ほのお",
-    "type2": "",
-    "baseStats": {
-      "h": 80,
-      "a": 116,
-      "b": 75,
-      "c": 65,
-      "d": 75,
-      "s": 119
-    }
-  },
-  {
     "id": 816,
     "name": "メッソン",
     "type1": "みず",
@@ -15514,20 +15122,6 @@
   {
     "id": 818,
     "name": "インテレオン",
-    "type1": "みず",
-    "type2": "",
-    "baseStats": {
-      "h": 70,
-      "a": 85,
-      "b": 65,
-      "c": 125,
-      "d": 65,
-      "s": 120
-    }
-  },
-  {
-    "id": 818,
-    "name": "Inteleon-Gmax",
     "type1": "みず",
     "type2": "",
     "baseStats": {
@@ -15610,20 +15204,6 @@
     }
   },
   {
-    "id": 823,
-    "name": "Corviknight-Gmax",
-    "type1": "ひこう",
-    "type2": "はがね",
-    "baseStats": {
-      "h": 98,
-      "a": 87,
-      "b": 105,
-      "c": 53,
-      "d": 85,
-      "s": 67
-    }
-  },
-  {
     "id": 824,
     "name": "サッチムシ",
     "type1": "むし",
@@ -15654,20 +15234,6 @@
   {
     "id": 826,
     "name": "イオルブ",
-    "type1": "むし",
-    "type2": "エスパー",
-    "baseStats": {
-      "h": 60,
-      "a": 45,
-      "b": 110,
-      "c": 80,
-      "d": 120,
-      "s": 90
-    }
-  },
-  {
-    "id": 826,
-    "name": "Orbeetle-Gmax",
     "type1": "むし",
     "type2": "エスパー",
     "baseStats": {
@@ -15792,20 +15358,6 @@
     }
   },
   {
-    "id": 834,
-    "name": "Drednaw-Gmax",
-    "type1": "みず",
-    "type2": "いわ",
-    "baseStats": {
-      "h": 90,
-      "a": 115,
-      "b": 90,
-      "c": 48,
-      "d": 68,
-      "s": 74
-    }
-  },
-  {
     "id": 835,
     "name": "ワンパチ",
     "type1": "でんき",
@@ -15876,20 +15428,6 @@
     }
   },
   {
-    "id": 839,
-    "name": "Coalossal-Gmax",
-    "type1": "いわ",
-    "type2": "ほのお",
-    "baseStats": {
-      "h": 110,
-      "a": 80,
-      "b": 120,
-      "c": 80,
-      "d": 90,
-      "s": 30
-    }
-  },
-  {
     "id": 840,
     "name": "カジッチュ",
     "type1": "くさ",
@@ -15918,36 +15456,8 @@
     }
   },
   {
-    "id": 841,
-    "name": "Flapple-Gmax",
-    "type1": "くさ",
-    "type2": "ドラゴン",
-    "baseStats": {
-      "h": 70,
-      "a": 110,
-      "b": 80,
-      "c": 95,
-      "d": 60,
-      "s": 70
-    }
-  },
-  {
     "id": 842,
     "name": "タルップル",
-    "type1": "くさ",
-    "type2": "ドラゴン",
-    "baseStats": {
-      "h": 110,
-      "a": 85,
-      "b": 80,
-      "c": 100,
-      "d": 80,
-      "s": 30
-    }
-  },
-  {
-    "id": 842,
-    "name": "Appletun-Gmax",
     "type1": "くさ",
     "type2": "ドラゴン",
     "baseStats": {
@@ -15988,20 +15498,6 @@
     }
   },
   {
-    "id": 844,
-    "name": "Sandaconda-Gmax",
-    "type1": "じめん",
-    "type2": "",
-    "baseStats": {
-      "h": 72,
-      "a": 107,
-      "b": 125,
-      "c": 65,
-      "d": 70,
-      "s": 71
-    }
-  },
-  {
     "id": 845,
     "name": "ウッウ",
     "type1": "ひこう",
@@ -16017,7 +15513,7 @@
   },
   {
     "id": 845,
-    "name": "Cramorant-Gulping",
+    "name": "ウッウ（Gulping）",
     "type1": "ひこう",
     "type2": "みず",
     "baseStats": {
@@ -16031,7 +15527,7 @@
   },
   {
     "id": 845,
-    "name": "Cramorant-Gorging",
+    "name": "ウッウ（Gorging）",
     "type1": "ひこう",
     "type2": "みず",
     "baseStats": {
@@ -16101,35 +15597,7 @@
   },
   {
     "id": 849,
-    "name": "Toxtricity-Low-Key",
-    "type1": "でんき",
-    "type2": "どく",
-    "baseStats": {
-      "h": 75,
-      "a": 98,
-      "b": 70,
-      "c": 114,
-      "d": 70,
-      "s": 75
-    }
-  },
-  {
-    "id": 849,
-    "name": "Toxtricity-Gmax",
-    "type1": "でんき",
-    "type2": "どく",
-    "baseStats": {
-      "h": 75,
-      "a": 98,
-      "b": 70,
-      "c": 114,
-      "d": 70,
-      "s": 75
-    }
-  },
-  {
-    "id": 849,
-    "name": "Toxtricity-Low-Key-Gmax",
+    "name": "ストリンダー（Low-Key）",
     "type1": "でんき",
     "type2": "どく",
     "baseStats": {
@@ -16158,20 +15626,6 @@
   {
     "id": 851,
     "name": "マルヤクデ",
-    "type1": "ほのお",
-    "type2": "むし",
-    "baseStats": {
-      "h": 100,
-      "a": 115,
-      "b": 65,
-      "c": 90,
-      "d": 90,
-      "s": 65
-    }
-  },
-  {
-    "id": 851,
-    "name": "Centiskorch-Gmax",
     "type1": "ほのお",
     "type2": "むし",
     "baseStats": {
@@ -16227,7 +15681,7 @@
   },
   {
     "id": 854,
-    "name": "Sinistea-Antique",
+    "name": "ヤバチャ（Antique）",
     "type1": "ゴースト",
     "type2": "",
     "baseStats": {
@@ -16255,7 +15709,7 @@
   },
   {
     "id": 855,
-    "name": "Polteageist-Antique",
+    "name": "ポットデス（Antique）",
     "type1": "ゴースト",
     "type2": "",
     "baseStats": {
@@ -16310,20 +15764,6 @@
     }
   },
   {
-    "id": 858,
-    "name": "Hatterene-Gmax",
-    "type1": "エスパー",
-    "type2": "フェアリー",
-    "baseStats": {
-      "h": 57,
-      "a": 90,
-      "b": 95,
-      "c": 136,
-      "d": 103,
-      "s": 29
-    }
-  },
-  {
     "id": 859,
     "name": "ベロバー",
     "type1": "あく",
@@ -16354,20 +15794,6 @@
   {
     "id": 861,
     "name": "オーロンゲ",
-    "type1": "あく",
-    "type2": "フェアリー",
-    "baseStats": {
-      "h": 95,
-      "a": 120,
-      "b": 65,
-      "c": 95,
-      "d": 75,
-      "s": 60
-    }
-  },
-  {
-    "id": 861,
-    "name": "Grimmsnarl-Gmax",
     "type1": "あく",
     "type2": "フェアリー",
     "baseStats": {
@@ -16492,20 +15918,6 @@
     }
   },
   {
-    "id": 869,
-    "name": "Alcremie-Gmax",
-    "type1": "フェアリー",
-    "type2": "",
-    "baseStats": {
-      "h": 65,
-      "a": 60,
-      "b": 75,
-      "c": 110,
-      "d": 121,
-      "s": 64
-    }
-  },
-  {
     "id": 870,
     "name": "タイレーツ",
     "type1": "かくとう",
@@ -16521,7 +15933,7 @@
   },
   {
     "id": 870,
-    "name": "Falinks-Mega",
+    "name": "タイレーツ（メガ）",
     "type1": "かくとう",
     "type2": "",
     "baseStats": {
@@ -16605,7 +16017,7 @@
   },
   {
     "id": 875,
-    "name": "Eiscue-Noice",
+    "name": "コオリッポ（Noice）",
     "type1": "こおり",
     "type2": "",
     "baseStats": {
@@ -16633,7 +16045,7 @@
   },
   {
     "id": 876,
-    "name": "Indeedee-F",
+    "name": "イエッサン（F）",
     "type1": "エスパー",
     "type2": "ノーマル",
     "baseStats": {
@@ -16661,7 +16073,7 @@
   },
   {
     "id": 877,
-    "name": "Morpeko-Hangry",
+    "name": "モルペコ（Hangry）",
     "type1": "でんき",
     "type2": "あく",
     "baseStats": {
@@ -16690,20 +16102,6 @@
   {
     "id": 879,
     "name": "ダイオウドウ",
-    "type1": "はがね",
-    "type2": "",
-    "baseStats": {
-      "h": 122,
-      "a": 130,
-      "b": 69,
-      "c": 80,
-      "d": 69,
-      "s": 30
-    }
-  },
-  {
-    "id": 879,
-    "name": "Copperajah-Gmax",
     "type1": "はがね",
     "type2": "",
     "baseStats": {
@@ -16786,20 +16184,6 @@
     }
   },
   {
-    "id": 884,
-    "name": "Duraludon-Gmax",
-    "type1": "はがね",
-    "type2": "ドラゴン",
-    "baseStats": {
-      "h": 70,
-      "a": 95,
-      "b": 115,
-      "c": 120,
-      "d": 50,
-      "s": 85
-    }
-  },
-  {
     "id": 885,
     "name": "ドラメシヤ",
     "type1": "ドラゴン",
@@ -16857,7 +16241,7 @@
   },
   {
     "id": 888,
-    "name": "Zacian-Crowned",
+    "name": "ザシアン（Crowned）",
     "type1": "フェアリー",
     "type2": "はがね",
     "baseStats": {
@@ -16885,7 +16269,7 @@
   },
   {
     "id": 889,
-    "name": "Zamazenta-Crowned",
+    "name": "ザマゼンタ（Crowned）",
     "type1": "かくとう",
     "type2": "はがね",
     "baseStats": {
@@ -16913,7 +16297,7 @@
   },
   {
     "id": 890,
-    "name": "Eternatus-Eternamax",
+    "name": "ムゲンダイナ（Eternamax）",
     "type1": "どく",
     "type2": "ドラゴン",
     "baseStats": {
@@ -16955,35 +16339,7 @@
   },
   {
     "id": 892,
-    "name": "Urshifu-Rapid-Strike",
-    "type1": "かくとう",
-    "type2": "みず",
-    "baseStats": {
-      "h": 100,
-      "a": 130,
-      "b": 100,
-      "c": 63,
-      "d": 60,
-      "s": 97
-    }
-  },
-  {
-    "id": 892,
-    "name": "Urshifu-Gmax",
-    "type1": "かくとう",
-    "type2": "あく",
-    "baseStats": {
-      "h": 100,
-      "a": 130,
-      "b": 100,
-      "c": 63,
-      "d": 60,
-      "s": 97
-    }
-  },
-  {
-    "id": 892,
-    "name": "Urshifu-Rapid-Strike-Gmax",
+    "name": "ウーラオス（れんげき）",
     "type1": "かくとう",
     "type2": "みず",
     "baseStats": {
@@ -17011,7 +16367,7 @@
   },
   {
     "id": 893,
-    "name": "Zarude-Dada",
+    "name": "ザルード（Dada）",
     "type1": "あく",
     "type2": "くさ",
     "baseStats": {
@@ -17095,7 +16451,7 @@
   },
   {
     "id": 898,
-    "name": "Calyrex-Ice",
+    "name": "バドレックス（Ice）",
     "type1": "エスパー",
     "type2": "こおり",
     "baseStats": {
@@ -17109,7 +16465,7 @@
   },
   {
     "id": 898,
-    "name": "Calyrex-Shadow",
+    "name": "バドレックス（Shadow）",
     "type1": "エスパー",
     "type2": "ゴースト",
     "baseStats": {
