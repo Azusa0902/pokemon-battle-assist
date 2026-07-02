@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Search, X } from 'lucide-react';
 import { useStore } from './store';
 import type { Party, TrainedPokemon, PokemonData } from './store';
@@ -31,27 +31,28 @@ export default function App() {
     fetchMovesDict();
   }, []);
 
-  // 🟢 鉄壁の検索フィルター（絶対にバグらないAND判定）
-  const filteredPokemon = fullPokedex.filter(p => {
-    if (!p || !p.name) return false;
+  // 🟢 鉄壁のフィルター：useMemoを使って「検索条件が変わった時だけ」強制的に再計算させる
+  const filteredPokemon = useMemo(() => {
+    return fullPokedex.filter(p => {
+      if (!p || !p.name) return false;
 
-    // 1. 名前検索（ひらがな・カタカナ両対応）
-    let matchName = true;
-    if (searchQuery) {
-      const toKatakana = (str: string) => str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
-      matchName = toKatakana(p.name).includes(toKatakana(searchQuery));
-    }
+      // 1. 名前検索（ひらがな・カタカナ両対応）
+      let matchName = true;
+      if (searchQuery) {
+        const normalize = (str: string) => str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60)).trim();
+        matchName = normalize(p.name).includes(normalize(searchQuery));
+      }
 
-    // 2. タイプ検索（選ばれたタイプを「すべて」持っているかチェック）
-    let matchType = true;
-    if (selectedTypes.length > 0) {
-      const t1 = p.type1?.trim() || '';
-      const t2 = p.type2?.trim() || '';
-      matchType = selectedTypes.every(selected => t1 === selected || t2 === selected);
-    }
+      // 2. タイプ検索（文字列として結合し、完全に含まれているかを判定する最強のロジック）
+      let matchType = true;
+      if (selectedTypes.length > 0) {
+        const pokeTypesStr = `${p.type1 || ''} ${p.type2 || ''}`;
+        matchType = selectedTypes.every(selected => pokeTypesStr.includes(selected));
+      }
 
-    return matchName && matchType;
-  });
+      return matchName && matchType;
+    });
+  }, [fullPokedex, searchQuery, selectedTypes]);
 
   const POKEMON_TYPES = [
     'ノーマル', 'ほのお', 'みず', 'くさ', 'でんき', 'こおり', 
@@ -152,7 +153,6 @@ export default function App() {
                       </button>
                       <button 
                         onClick={() => {
-                          // 🟢 バトル開始の準備。以前の選出を全てリセットして即座に相手入力へ！
                           setActiveParty(party);
                           setMyPicks([]);
                           setOppPicks([]);
@@ -184,7 +184,6 @@ export default function App() {
 
         {currentScreen === 'party-edit' && editingParty && (
           <div className="space-y-6 animate-in fade-in duration-300">
-            {/* --- ここは前回から変更なし（省略せずにフルで出力します） --- */}
             <div className="flex justify-between items-center mb-4">
               <input 
                 type="text" 
@@ -357,7 +356,6 @@ export default function App() {
               <div className="flex flex-wrap gap-1.5">
                 {POKEMON_TYPES.map(type => {
                   const isSelected = selectedTypes.includes(type);
-                  // 2個選ばれていて、かつ自分が選ばれていない場合はボタンを半透明にする
                   const isDisabled = !isSelected && selectedTypes.length >= 2;
 
                   return (
@@ -365,14 +363,12 @@ export default function App() {
                       key={type}
                       disabled={isDisabled}
                       onClick={() => {
-                        // 🟢 シンプルで絶対にバグらない選択ロジック
-                        if (isSelected) {
-                          // 選ばれていれば解除
-                          setSelectedTypes(selectedTypes.filter(t => t !== type));
-                        } else if (selectedTypes.length < 2) {
-                          // 選ばれていなくて、まだ2個未満なら追加
-                          setSelectedTypes([...selectedTypes, type]);
-                        }
+                        // 🟢 prevを用いた安全な状態更新
+                        setSelectedTypes(prev => {
+                          if (prev.includes(type)) return prev.filter(t => t !== type);
+                          if (prev.length < 2) return [...prev, type];
+                          return prev;
+                        });
                       }}
                       className={`px-2 py-1 text-xs font-medium rounded border transition-colors ${
                         isSelected 
@@ -486,7 +482,6 @@ export default function App() {
               </div>
             </div>
 
-            {/* 🟢 相性表を見た『後』に、両者の選出を決めるUIに変更！ */}
             <div className="space-y-4 bg-slate-900 border border-slate-800 p-5 rounded-xl">
               <h3 className="text-sm font-bold text-slate-300">⚔️ 両者の選出を決定</h3>
               
