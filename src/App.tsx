@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 import { useStore } from './store';
-import type { Party, TrainedPokemon, PokemonData } from './store'; // 🟢 PokemonDataを追加
+import type { Party, TrainedPokemon, PokemonData } from './store';
 import { getEffectiveness } from './typeChart';
 import { calculateStat, calculateDamage, getDamageText } from './calc';
 
@@ -18,7 +18,6 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   
-  // 🟢 ダミーデータを完全に排除し、本物のデータ型に変更
   const [opponentParty, setOpponentParty] = useState<PokemonData[]>([]);
   const [activeParty, setActiveParty] = useState<Party | null>(null);
   const [myPicks, setMyPicks] = useState<TrainedPokemon[]>([]);
@@ -26,23 +25,25 @@ export default function App() {
   
   const [myActiveIdx, setMyActiveIdx] = useState(0);
   const [oppActiveIdx, setOppActiveIdx] = useState(0);
-  
 
   useEffect(() => {
     fetchPokedex();
-    fetchMovesDict();
+    fetchMovesDict(); // 🟢 技辞典もロード
   }, []);
 
-  // 🟢 検索機能の強化（カタカナ対応 ＆ タイプ空白バグ解消）
+  // 🟢 鉄壁のフィルターロジック（空白除去＆カタカナ対応）
   const filteredPokemon = fullPokedex.filter(p => {
-    // ひらがなをカタカナに変換して、どちらで打ってもヒットするようにする
-    const normalize = (str: string) => str.replace(/[\u3041-\u3096]/g, match => String.fromCharCode(match.charCodeAt(0) + 0x60));
-    const matchName = normalize(p.name).includes(normalize(searchQuery));
+    if (!p || !p.name) return false;
     
-    // 空白バグを無視するため、完全一致(===)ではなく includes を使用
+    // ひらがな・カタカナ両対応の名前検索
+    const normalize = (str: string) => str.replace(/[\u3041-\u3096]/g, match => String.fromCharCode(match.charCodeAt(0) + 0x60));
+    const matchName = !searchQuery || normalize(p.name).includes(normalize(searchQuery));
+    
+    // タイプの完全一致検索（空白バグを .trim() で排除）
     const matchType = selectedTypes.length === 0 || selectedTypes.every(t => 
-      (p.type1 && p.type1.includes(t)) || (p.type2 && p.type2.includes(t))
+      p.type1?.trim() === t || p.type2?.trim() === t
     );
+
     return matchName && matchType;
   });
 
@@ -59,7 +60,6 @@ export default function App() {
     }
   };
 
-  // 🟢 自分の育成済みポケモン vs 相手のポケモン
   const calculateMatchup = (myPoke: TrainedPokemon, oppPoke: PokemonData) => {
     const myAttack1 = getEffectiveness(myPoke.type1, oppPoke.type1, oppPoke.type2);
     const myAttack2 = myPoke.type2 ? getEffectiveness(myPoke.type2, oppPoke.type1, oppPoke.type2) : 0;
@@ -67,9 +67,7 @@ export default function App() {
 
     let maxDefense = 0;
     maxDefense = Math.max(maxDefense, getEffectiveness(oppPoke.type1, myPoke.type1, myPoke.type2));
-    if (oppPoke.type2) {
-      maxDefense = Math.max(maxDefense, getEffectiveness(oppPoke.type2, myPoke.type1, myPoke.type2));
-    }
+    if (oppPoke.type2) maxDefense = Math.max(maxDefense, getEffectiveness(oppPoke.type2, myPoke.type1, myPoke.type2));
 
     if (maxOffense > maxDefense || (maxOffense >= 2 && maxDefense <= 1)) return { text: '〇', color: 'text-cyan-400 bg-cyan-950/40 border-cyan-800' };
     if (maxOffense < maxDefense || (maxDefense >= 2 && maxOffense <= 1)) return { text: '✕', color: 'text-red-400 bg-red-950/40 border-red-800' };
@@ -77,10 +75,9 @@ export default function App() {
     return { text: 'ー', color: 'text-slate-400 bg-slate-800/40 border-slate-700' };
   };
 
+  // 🟢 null バグを修正したAIおすすめ選出
   const getRecommendedPicks = () => {
     if (opponentParty.length === 0 || !activeParty) return [];
-    
-    // 🟢 空枠（null）を事前に除外して、確実に登録されているポケモンだけに絞る
     const validPokemons = activeParty.pokemons.filter((p): p is TrainedPokemon => p !== null);
 
     const scoredParty = validPokemons.map(myPoke => {
@@ -94,6 +91,7 @@ export default function App() {
     });
     return scoredParty.sort((a, b) => b.score - a.score).slice(0, 3).map(s => s.pokemon);
   };
+
   const recommendedPicks = getRecommendedPicks();
 
   return (
@@ -125,7 +123,7 @@ export default function App() {
                   <div key={party.id} className="bg-slate-900 border border-slate-800 p-4 rounded-xl flex justify-between items-center mb-3">
                     <div>
                       <h3 className="font-bold text-slate-200">{party.name}</h3>
-                      <p className="text-xs text-slate-500">{party.pokemons.length}匹編成</p>
+                      <p className="text-xs text-slate-500">{party.pokemons.filter(Boolean).length}匹編成</p>
                     </div>
                     <div className="flex gap-2">
                       <button 
@@ -135,17 +133,19 @@ export default function App() {
                           setTempPokemon(null);
                           setCurrentScreen('party-edit');
                         }}
-                        className="bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                        className="bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors"
                       >
                         編集
                       </button>
                       <button 
                         onClick={() => {
-                          if (window.confirm('この編成を削除しますか？')) deleteParty(party.id);
+                          setActiveParty(party);
+                          setMyPicks([]);
+                          setCurrentScreen('party-select');
                         }}
-                        className="bg-slate-800 hover:bg-red-950 text-slate-500 hover:text-red-400 border border-slate-700 hover:border-red-900 px-3 py-2 rounded-lg text-sm transition-colors"
+                        className="bg-cyan-600 hover:bg-cyan-500 text-white px-3 py-2 rounded-lg text-sm font-bold transition-colors"
                       >
-                        削除
+                        選出
                       </button>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ export default function App() {
               </div>
               <button 
                 onClick={() => {
-                  const newParty = { id: crypto.randomUUID(), name: `新規編成 ${parties.length + 1}`, pokemons: [] };
+                  const newParty = { id: crypto.randomUUID(), name: `新規編成 ${parties.length + 1}`, pokemons: Array(6).fill(null) };
                   addParty(newParty);
                   setEditingParty(newParty);
                   setCurrentScreen('party-edit');
@@ -163,9 +163,6 @@ export default function App() {
                 + 新しい編成を登録
               </button>
             </div>
-            <button onClick={() => setCurrentScreen('party-select')} className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-5 rounded-xl shadow-[0_0_20px_rgba(8,145,178,0.3)] transition-all active:scale-95 text-lg tracking-wider">
-              BATTLE START
-            </button>
           </div>
         )}
 
@@ -215,7 +212,7 @@ export default function App() {
                           onClick={(e) => {
                             e.stopPropagation();
                             const newPokemons = [...editingParty.pokemons];
-                            newPokemons.splice(index, 1);
+                            newPokemons[index] = null;
                             setEditingParty({...editingParty, pokemons: newPokemons});
                             if (editingSlot === index) { setTempPokemon(null); setEditingSlot(null); }
                           }}
@@ -238,32 +235,29 @@ export default function App() {
             {tempPokemon && editingSlot !== null && (
               <div className="bg-slate-900 border border-cyan-800/50 shadow-[0_0_15px_rgba(8,145,178,0.1)] p-5 rounded-xl animate-in slide-in-from-bottom-4 duration-300">
                 <div className="space-y-4">
-                  <div className="grid grid-cols-1 gap-3">
-                    <div>
-                      <label className="text-xs text-slate-400 block mb-1">ポケモン名 (入力アシストあり)</label>
-                      {/* 🟢 名前入力のアシストを追加 */}
-                      <input 
-                        type="text" 
-                        list="pokemon-name-list"
-                        value={tempPokemon.name} 
-                        onChange={e => {
-                          const typedName = e.target.value;
-                          const foundPoke = fullPokedex.find(p => p.name === typedName);
-                          setTempPokemon({
-                            ...tempPokemon, 
-                            name: typedName,
-                            type1: foundPoke ? foundPoke.type1 : tempPokemon.type1,
-                            type2: foundPoke ? foundPoke.type2 : tempPokemon.type2,
-                          });
-                        }} 
-                        className="w-full bg-slate-800 border border-slate-700 rounded p-2 text-sm text-white focus:border-cyan-500 focus:outline-none" 
-                      />
-                    </div>
+                  <div>
+                    <label className="text-xs text-slate-400 block mb-1">ポケモン名</label>
+                    <input 
+                      type="text" list="pokemon-name-list"
+                      value={tempPokemon.name} 
+                      onChange={e => {
+                        const typedName = e.target.value;
+                        const foundPoke = fullPokedex.find(p => p.name === typedName);
+                        setTempPokemon({
+                          ...tempPokemon, 
+                          name: typedName,
+                          type1: foundPoke ? foundPoke.type1 : tempPokemon.type1,
+                          type2: foundPoke ? foundPoke.type2 : tempPokemon.type2,
+                          pokemonId: foundPoke ? foundPoke.id : 0
+                        });
+                      }} 
+                      className="w-full bg-slate-800 border border-slate-700 rounded p-2 text-sm text-white focus:border-cyan-500 focus:outline-none" 
+                    />
                   </div>
 
                   <div>
                     <div className="flex justify-between items-end mb-1">
-                      <label className="text-xs text-slate-400 block">ステータスポイント</label>
+                      <label className="text-xs text-slate-400 block">努力値</label>
                       <span className={`text-xs font-bold ${Object.values(tempPokemon.evs).reduce((a, b) => a + b, 0) === 66 ? 'text-lime-400' : 'text-slate-500'}`}>
                         合計: {Object.values(tempPokemon.evs).reduce((a, b) => a + b, 0)} / 66
                       </span>
@@ -273,8 +267,7 @@ export default function App() {
                         <div key={stat} className="flex items-center bg-slate-800 border border-slate-700 rounded overflow-hidden">
                           <span className="px-2 text-xs font-bold text-slate-400 uppercase w-8 text-center bg-slate-700/50">{stat}</span>
                           <input 
-                            type="number" 
-                            min="0" max="32" 
+                            type="number" min="0" max="32" 
                             value={tempPokemon.evs[stat as keyof typeof tempPokemon.evs]}
                             onChange={e => {
                               let val = Number(e.target.value) || 0;
@@ -311,12 +304,10 @@ export default function App() {
                       ))}
                     </div>
                     
-                    {/* 🟢 名前と技のアシスト用リスト */}
                     <datalist id="pokemon-name-list">
                       {fullPokedex.map(p => <option key={p.id} value={p.name} />)}
                     </datalist>
                     <datalist id="move-assist-list">
-                      {/* 🟢 今選んでいるポケモンが「実際に覚える技」だけを候補に出す（未入力時は全技を表示） */}
                       {(fullPokedex.find(p => p.name === tempPokemon.name)?.moves || Object.keys(movesDict)).map(moveName => (
                         <option key={moveName} value={moveName} />
                       ))}
@@ -341,23 +332,38 @@ export default function App() {
           </div>
         )}
 
-        {currentScreen === 'party-select' && (
-          <div className="space-y-4 animate-in fade-in slide-in-from-right-4 duration-300">
-            <h2 className="text-xl font-bold border-l-4 border-cyan-400 pl-3">使う編成を選ぶ</h2>
-            {parties.map((party) => (
-              <button 
-                key={party.id} 
-                onClick={() => {
-                  setActiveParty(party);
-                  setMyPicks([]); // 選出リセット
-                  setCurrentScreen('opponent-input');
-                }} 
-                className="w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 p-5 rounded-xl text-left transition-colors mb-3"
-              >
-                <h3 className="font-bold text-cyan-400 mb-1">{party.name}</h3>
-                <p className="text-xs text-slate-500">タップして次へ ➔</p>
-              </button>
-            ))}
+        {currentScreen === 'party-select' && activeParty && (
+          <div className="space-y-4 animate-in fade-in duration-300">
+            <h2 className="text-xl font-bold text-cyan-400 border-l-4 border-cyan-400 pl-3">自分の選出 (3匹)</h2>
+            <div className="grid grid-cols-2 gap-3">
+              {activeParty.pokemons.map((p, i) => {
+                if (!p || !p.name) return null;
+                const isSelected = myPicks.some(pick => pick.uid === p.uid);
+                return (
+                  <button
+                    key={i}
+                    onClick={() => {
+                      if (isSelected) setMyPicks(myPicks.filter(pick => pick.uid !== p.uid));
+                      else if (myPicks.length < 3) setMyPicks([...myPicks, p]);
+                    }}
+                    className={`p-4 rounded-xl border text-left transition-all ${
+                      isSelected ? 'bg-cyan-900/50 border-cyan-400 ring-1 ring-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.2)]' : 'bg-slate-800 border-slate-700'
+                    }`}
+                  >
+                    <div className="font-bold text-white flex justify-between">
+                      {p.name} {isSelected && <span className="text-cyan-400">✓</span>}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+            <button
+              disabled={myPicks.length !== 3}
+              onClick={() => setCurrentScreen('opponent-input')}
+              className="w-full bg-cyan-600 hover:bg-cyan-500 disabled:bg-slate-700 disabled:text-slate-500 text-white font-bold py-4 rounded-xl transition-all mt-4"
+            >
+              相手のパーティ入力へ進む
+            </button>
           </div>
         )}
 
@@ -372,9 +378,13 @@ export default function App() {
                   return (
                     <button
                       key={type}
+                      // 🟢 鉄壁の状態管理ロジック（ReactのPrevを使用）
                       onClick={() => {
-                        if (isSelected) setSelectedTypes(selectedTypes.filter(t => t !== type));
-                        else setSelectedTypes(selectedTypes.length < 2 ? [...selectedTypes, type] : [selectedTypes[1], type]);
+                        setSelectedTypes(prev => {
+                          if (prev.includes(type)) return prev.filter(t => t !== type);
+                          if (prev.length < 2) return [...prev, type];
+                          return [prev[1], type];
+                        });
                       }}
                       className={`px-2 py-1 text-xs font-medium rounded border ${isSelected ? 'bg-lime-600 border-lime-400 text-white' : 'bg-slate-800 border-slate-700 text-slate-400'}`}
                     >
@@ -427,7 +437,7 @@ export default function App() {
               disabled={opponentParty.length === 0}
               className="w-full bg-lime-600 hover:bg-lime-500 disabled:bg-slate-800 disabled:text-slate-600 text-white font-bold py-4 rounded-xl mt-4"
             >
-              相性分析へ
+              相性分析へ進む
             </button>
           </div>
         )}
@@ -469,7 +479,6 @@ export default function App() {
               </table>
             </div>
 
-            {/* 🟢 マトリクス表の下にこれを追加 */}
             <div className="bg-slate-900 border border-slate-800 p-5 rounded-xl my-6 shadow-sm">
               <h3 className="text-sm font-bold text-slate-300 flex items-center gap-2">✨ AIおすすめ選出（上位3匹）</h3>
               <div className="flex flex-wrap gap-2 mt-3">
@@ -485,30 +494,7 @@ export default function App() {
             </div>
 
             <div className="space-y-4 bg-slate-900 border border-slate-800 p-5 rounded-xl">
-              <h3 className="text-sm font-bold text-slate-300">⚔️ 最終選出を決定</h3>
-              
-              <div>
-                <p className="text-xs text-slate-400 mb-2">自分の選出（3匹）: {myPicks.length}/3</p>
-                <div className="flex flex-wrap gap-2">
-                  {activeParty.pokemons.map(p => {
-                    if (!p) return null;
-                    const isSelected = myPicks.find(pick => pick.uid === p.uid);
-                    return (
-                      <button 
-                        key={p.uid}
-                        onClick={() => {
-                          if (isSelected) setMyPicks(myPicks.filter(pick => pick.uid !== p.uid));
-                          else if (myPicks.length < 3) setMyPicks([...myPicks, p]);
-                        }}
-                        className={`px-3 py-1.5 rounded text-sm font-medium border ${isSelected ? 'bg-cyan-600 border-cyan-500 text-white' : 'bg-slate-800 border-slate-700 text-slate-400'}`}
-                      >
-                        {p.name}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
+              <h3 className="text-sm font-bold text-slate-300">⚔️ 相手の予想選出を入力</h3>
               <div>
                 <p className="text-xs text-slate-400 mb-2">相手の予想選出（3匹）: {oppPicks.length}/3</p>
                 <div className="flex flex-wrap gap-2">
@@ -533,8 +519,8 @@ export default function App() {
 
             <button 
               onClick={() => setCurrentScreen('battle')} 
-              disabled={myPicks.length < 3 || oppPicks.length < 3}
-              className="w-full bg-red-600 hover:bg-red-500 disabled:bg-slate-800 disabled:text-slate-600 text-white font-bold py-4 rounded-xl mt-4"
+              disabled={oppPicks.length < 3}
+              className="w-full bg-red-600 hover:bg-red-500 disabled:bg-slate-800 disabled:text-slate-600 text-white font-bold py-4 rounded-xl mt-4 shadow-[0_0_15px_rgba(220,38,38,0.3)]"
             >
               バトルシミュレーター起動！
             </button>
@@ -574,18 +560,17 @@ export default function App() {
 
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 relative shadow-lg">
               <div className="grid grid-cols-2 gap-3">
+                {/* 🟢 完全なる全技辞典対応ダメージ計算 */}
                 {myPicks[myActiveIdx].moves.map((move, i) => {
                   const myPoke = myPicks[myActiveIdx];
                   const oppPoke = oppPicks[oppActiveIdx];
-                  // 種族値を取得するために fullPokedex から自分のポケモンを探す
                   const myPokeData = fullPokedex.find(p => p.name === myPoke.name) || myPoke as any;
 
-                  // 🟢 全技辞典からデータを取得（見つからなければダミー）
-                  const moveData = movesDict[move] || { power: 0, category: '変化', type: 'ノーマル' };
-                  const movePower = moveData.power || 0;
-
-                  // 変化技やダメージ0の技は計算をスキップして表示だけする
-                  if (movePower === 0) {
+                  // 辞典から技データを取得
+                  const moveData = movesDict[move];
+                  
+                  // 変化技や知らない技の場合は計算をスキップ
+                  if (!moveData || moveData.power === 0) {
                     return (
                       <button key={i} disabled={!move} className="bg-slate-800 border border-slate-700 p-3 rounded-xl text-left disabled:opacity-30 group">
                         <div className="font-bold text-slate-200 text-sm mb-1.5">{move || '技未設定'}</div>
@@ -594,20 +579,17 @@ export default function App() {
                     );
                   }
 
+                  // 物理か特殊かの判定と、タイプ一致の判定
                   const isSpecial = moveData.category === '特殊';
-                  
-                  // 🟢 タイプ一致判定（自分のタイプと技のタイプが同じなら1.5倍）
                   const isStab = (myPoke.type1 === moveData.type || myPoke.type2 === moveData.type) ? 1.5 : 1.0; 
-                  
-                  // 🟢 技のタイプと相手のタイプから相性倍率（ばつぐん等）を計算
                   const typeEffectiveness = getEffectiveness(moveData.type, oppPoke.type1, oppPoke.type2 || '');
 
-                  // 自分の攻撃力（物理ならA、特殊ならCのステータスと努力値を参照）
+                  // 自分の攻撃ステータス（努力値も反映）
                   const attackEV = isSpecial ? (myPoke.evs.c || 0) : (myPoke.evs.a || 0);
                   const attackBase = isSpecial ? (myPokeData.baseStats?.c || 100) : (myPokeData.baseStats?.a || 100);
                   const myAttack = calculateStat(attackBase, attackEV, false); 
                   
-                  // 相手の耐久力（物理ならB、特殊ならD）
+                  // 相手の防御ステータス
                   const oppDefBase = isSpecial ? (oppPoke.baseStats?.d || 100) : (oppPoke.baseStats?.b || 100);
                   const oppHpBase = oppPoke.baseStats?.h || 100;
                   
@@ -616,11 +598,11 @@ export default function App() {
                   const oppB4 = calculateStat(oppDefBase, 0, false);
                   const oppBMax = calculateStat(oppDefBase, 32, false);
 
-                  // チャンピオンズ仕様のダメージ計算エンジンに流し込む
-                  const dmgMin = calculateDamage(50, movePower, myAttack, oppB4, { stab: isStab, typeEffectiveness });
-                  const dmgMax = calculateDamage(50, movePower, myAttack, oppBMax, { stab: isStab, typeEffectiveness });
+                  // いざダメージ計算エンジンへ！
+                  const dmgMin = calculateDamage(50, moveData.power, myAttack, oppB4, { stab: isStab, typeEffectiveness });
+                  const dmgMax = calculateDamage(50, moveData.power, myAttack, oppBMax, { stab: isStab, typeEffectiveness });
 
-                  // 相性による文字色の変更
+                  // 相性で文字色を変える
                   let effColor = "text-slate-400 border-slate-600";
                   if (typeEffectiveness >= 2) effColor = "text-red-400 border-red-800 bg-red-950/30";
                   if (typeEffectiveness <= 0.5) effColor = "text-blue-400 border-blue-800 bg-blue-950/30";
@@ -630,23 +612,18 @@ export default function App() {
                     <button key={i} disabled={!move} className="bg-slate-800 border border-slate-700 hover:border-cyan-500 p-3 rounded-xl text-left transition-all disabled:opacity-30 group relative">
                       <div className="flex justify-between items-start mb-1.5">
                         <span className="font-bold text-slate-200 text-sm">{move || '技未設定'}</span>
-                        {move && (
-                          <span className={`text-[10px] px-1.5 py-0.5 rounded border ${effColor}`}>
-                            {moveData.type} / {moveData.category} ({movePower})
-                          </span>
-                        )}
+                        <span className={`text-[10px] px-1.5 py-0.5 rounded border ${effColor}`}>
+                          {moveData.type} / {moveData.category} ({moveData.power})
+                        </span>
                       </div>
                       
-                      {move && typeEffectiveness > 0 && (
+                      {typeEffectiveness > 0 ? (
                         <div className="text-[11px] text-slate-400 group-hover:text-cyan-300 leading-tight mt-2">
                           無振り: {getDamageText(dmgMin.minDamage, dmgMin.maxDamage, oppH4)}<br/>
                           特化時: {getDamageText(dmgMax.minDamage, dmgMax.maxDamage, oppHMax)}
                         </div>
-                      )}
-                      {move && typeEffectiveness === 0 && (
-                        <div className="text-[11px] text-slate-500 mt-2 font-bold">
-                          効果がないみたいだ…
-                        </div>
+                      ) : (
+                        <div className="text-[11px] text-slate-500 mt-2 font-bold">効果がないみたいだ…</div>
                       )}
                     </button>
                   );
