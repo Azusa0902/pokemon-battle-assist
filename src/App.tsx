@@ -9,7 +9,7 @@ type Screen = 'home' | 'party-edit' | 'party-select' | 'opponent-input' | 'analy
 
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('home');
-  const { parties, addParty, updateParty, deleteParty, fullPokedex, fetchPokedex } = useStore();
+  const { parties, addParty, updateParty, deleteParty, fullPokedex, fetchPokedex, movesDict, fetchMovesDict } = useStore();
   
   const [editingParty, setEditingParty] = useState<Party | null>(null);
   const [editingSlot, setEditingSlot] = useState<number | null>(null);
@@ -26,14 +26,23 @@ export default function App() {
   
   const [myActiveIdx, setMyActiveIdx] = useState(0);
   const [oppActiveIdx, setOppActiveIdx] = useState(0);
+  
 
   useEffect(() => {
     fetchPokedex();
+    fetchMovesDict();
   }, []);
 
+  // 🟢 検索機能の強化（カタカナ対応 ＆ タイプ空白バグ解消）
   const filteredPokemon = fullPokedex.filter(p => {
-    const matchName = p.name.includes(searchQuery);
-    const matchType = selectedTypes.length === 0 || selectedTypes.every(t => p.type1 === t || p.type2 === t);
+    // ひらがなをカタカナに変換して、どちらで打ってもヒットするようにする
+    const normalize = (str: string) => str.replace(/[\u3041-\u3096]/g, match => String.fromCharCode(match.charCodeAt(0) + 0x60));
+    const matchName = normalize(p.name).includes(normalize(searchQuery));
+    
+    // 空白バグを無視するため、完全一致(===)ではなく includes を使用
+    const matchType = selectedTypes.length === 0 || selectedTypes.every(t => 
+      (p.type1 && p.type1.includes(t)) || (p.type2 && p.type2.includes(t))
+    );
     return matchName && matchType;
   });
 
@@ -70,7 +79,11 @@ export default function App() {
 
   const getRecommendedPicks = () => {
     if (opponentParty.length === 0 || !activeParty) return [];
-    const scoredParty = activeParty.pokemons.map(myPoke => {
+    
+    // 🟢 空枠（null）を事前に除外して、確実に登録されているポケモンだけに絞る
+    const validPokemons = activeParty.pokemons.filter((p): p is TrainedPokemon => p !== null);
+
+    const scoredParty = validPokemons.map(myPoke => {
       let score = 0;
       opponentParty.forEach(oppPoke => {
         const matchup = calculateMatchup(myPoke, oppPoke);
@@ -81,7 +94,6 @@ export default function App() {
     });
     return scoredParty.sort((a, b) => b.score - a.score).slice(0, 3).map(s => s.pokemon);
   };
-
   const recommendedPicks = getRecommendedPicks();
 
   return (
@@ -562,38 +574,75 @@ export default function App() {
                 {myPicks[myActiveIdx].moves.map((move, i) => {
                   const myPoke = myPicks[myActiveIdx];
                   const oppPoke = oppPicks[oppActiveIdx];
+                  // 種族値を取得するために fullPokedex から自分のポケモンを探す
+                  const myPokeData = fullPokedex.find(p => p.name === myPoke.name) || myPoke as any;
 
-                  const MOVE_DEX: Record<string, { power: number, isSpecial: boolean }> = {
-                    'じしん': { power: 100, isSpecial: false }, '10まんボルト': { power: 90, isSpecial: true },
-                    'れいとうビーム': { power: 90, isSpecial: true }, 'インファイト': { power: 120, isSpecial: false },
-                    'つるぎのまい': { power: 0, isSpecial: false }, 'シャドーボール': { power: 80, isSpecial: true },
-                  };
+                  // 🟢 全技辞典からデータを取得（見つからなければダミー）
+                  const moveData = movesDict[move] || { power: 0, category: '変化', type: 'ノーマル' };
+                  const movePower = moveData.power || 0;
 
-                  const moveData = MOVE_DEX[move] || { power: move ? 80 : 0, isSpecial: false };
-                  const movePower = moveData.power;
-                  const isStab = (myPoke.type1 === 'ノーマル') ? 1.5 : 1.0; 
+                  // 変化技やダメージ0の技は計算をスキップして表示だけする
+                  if (movePower === 0) {
+                    return (
+                      <button key={i} disabled={!move} className="bg-slate-800 border border-slate-700 p-3 rounded-xl text-left disabled:opacity-30 group">
+                        <div className="font-bold text-slate-200 text-sm mb-1.5">{move || '技未設定'}</div>
+                        {move && <div className="text-[11px] text-slate-400">変化技 / ダメージ計算なし</div>}
+                      </button>
+                    );
+                  }
 
-                  const attackEV = moveData.isSpecial ? (myPoke.evs.c || 0) : (myPoke.evs.a || 0);
-                  const myAttack = calculateStat(100, attackEV, false); 
+                  const isSpecial = moveData.category === '特殊';
                   
-                  // 🟢 消し飛んでいた計算変数を復活
+                  // 🟢 タイプ一致判定（自分のタイプと技のタイプが同じなら1.5倍）
+                  const isStab = (myPoke.type1 === moveData.type || myPoke.type2 === moveData.type) ? 1.5 : 1.0; 
+                  
+                  // 🟢 技のタイプと相手のタイプから相性倍率（ばつぐん等）を計算
+                  const typeEffectiveness = getEffectiveness(moveData.type, oppPoke.type1, oppPoke.type2 || '');
+
+                  // 自分の攻撃力（物理ならA、特殊ならCのステータスと努力値を参照）
+                  const attackEV = isSpecial ? (myPoke.evs.c || 0) : (myPoke.evs.a || 0);
+                  const attackBase = isSpecial ? (myPokeData.baseStats?.c || 100) : (myPokeData.baseStats?.a || 100);
+                  const myAttack = calculateStat(attackBase, attackEV, false); 
+                  
+                  // 相手の耐久力（物理ならB、特殊ならD）
+                  const oppDefBase = isSpecial ? (oppPoke.baseStats?.d || 100) : (oppPoke.baseStats?.b || 100);
                   const oppHpBase = oppPoke.baseStats?.h || 100;
-                  const oppDefBase = moveData.isSpecial ? (oppPoke.baseStats?.d || 100) : (oppPoke.baseStats?.b || 100);
+                  
                   const oppH4 = calculateStat(oppHpBase, 0, true);
                   const oppHMax = calculateStat(oppHpBase, 32, true);
                   const oppB4 = calculateStat(oppDefBase, 0, false);
                   const oppBMax = calculateStat(oppDefBase, 32, false);
 
-                  const dmgMin = calculateDamage(50, movePower, myAttack, oppB4, { stab: isStab, typeEffectiveness: 1 });
-                  const dmgMax = calculateDamage(50, movePower, myAttack, oppBMax, { stab: isStab, typeEffectiveness: 1 });
+                  // チャンピオンズ仕様のダメージ計算エンジンに流し込む
+                  const dmgMin = calculateDamage(50, movePower, myAttack, oppB4, { stab: isStab, typeEffectiveness });
+                  const dmgMax = calculateDamage(50, movePower, myAttack, oppBMax, { stab: isStab, typeEffectiveness });
+
+                  // 相性による文字色の変更
+                  let effColor = "text-slate-400 border-slate-600";
+                  if (typeEffectiveness >= 2) effColor = "text-red-400 border-red-800 bg-red-950/30";
+                  if (typeEffectiveness <= 0.5) effColor = "text-blue-400 border-blue-800 bg-blue-950/30";
+                  if (typeEffectiveness === 0) effColor = "text-slate-600 border-slate-800 bg-slate-900";
 
                   return (
-                    <button key={i} disabled={!move} className="bg-slate-800 border border-slate-700 hover:border-cyan-500 p-3 rounded-xl text-left disabled:opacity-30 group">
-                      <div className="font-bold text-slate-200 text-sm mb-1.5">{move || '技未設定'}</div>
-                      {move && (
-                        <div className="text-[11px] text-slate-400 group-hover:text-cyan-300">
+                    <button key={i} disabled={!move} className="bg-slate-800 border border-slate-700 hover:border-cyan-500 p-3 rounded-xl text-left transition-all disabled:opacity-30 group relative">
+                      <div className="flex justify-between items-start mb-1.5">
+                        <span className="font-bold text-slate-200 text-sm">{move || '技未設定'}</span>
+                        {move && (
+                          <span className={`text-[10px] px-1.5 py-0.5 rounded border ${effColor}`}>
+                            {moveData.type} / {moveData.category} ({movePower})
+                          </span>
+                        )}
+                      </div>
+                      
+                      {move && typeEffectiveness > 0 && (
+                        <div className="text-[11px] text-slate-400 group-hover:text-cyan-300 leading-tight mt-2">
                           無振り: {getDamageText(dmgMin.minDamage, dmgMin.maxDamage, oppH4)}<br/>
                           特化時: {getDamageText(dmgMax.minDamage, dmgMax.maxDamage, oppHMax)}
+                        </div>
+                      )}
+                      {move && typeEffectiveness === 0 && (
+                        <div className="text-[11px] text-slate-500 mt-2 font-bold">
+                          効果がないみたいだ…
                         </div>
                       )}
                     </button>
