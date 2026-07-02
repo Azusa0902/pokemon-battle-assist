@@ -1,0 +1,3467 @@
+{
+  "ギガインパクト": {
+    "name": "ギガインパクト",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 150,
+    "accuracy": 90
+  },
+  "すてみタックル": {
+    "name": "すてみタックル",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "のしかかり": {
+    "name": "のしかかり",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 100
+  },
+  "からげんき": {
+    "name": "からげんき",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "はかいこうせん": {
+    "name": "はかいこうせん",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 150,
+    "accuracy": 90
+  },
+  "りんしょう": {
+    "name": "りんしょう",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 60,
+    "accuracy": 100
+  },
+  "だいちのはどう": {
+    "name": "だいちのはどう",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 100
+  },
+  "ウェザーボール": {
+    "name": "ウェザーボール",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 100
+  },
+  "いびき": {
+    "name": "いびき",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 100
+  },
+  "てだすけ": {
+    "name": "てだすけ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "あまいかおり": {
+    "name": "あまいかおり",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ねごと": {
+    "name": "ねごと",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "こらえる": {
+    "name": "こらえる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "こわいかお": {
+    "name": "こわいかお",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "まもる": {
+    "name": "まもる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "みがわり": {
+    "name": "みがわり",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ほえる": {
+    "name": "ほえる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "つるぎのまい": {
+    "name": "つるぎのまい",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "パワーウィップ": {
+    "name": "パワーウィップ",
+    "type": "くさ",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 85
+  },
+  "はなふぶき": {
+    "name": "はなふぶき",
+    "type": "くさ",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "タネばくだん": {
+    "name": "タネばくだん",
+    "type": "くさ",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "グラススライダー": {
+    "name": "グラススライダー",
+    "type": "くさ",
+    "category": "物理",
+    "power": 55,
+    "accuracy": 100
+  },
+  "くさわけ": {
+    "name": "くさわけ",
+    "type": "くさ",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "タネマシンガン": {
+    "name": "タネマシンガン",
+    "type": "くさ",
+    "category": "物理",
+    "power": 25,
+    "accuracy": 100
+  },
+  "ハードプラント": {
+    "name": "ハードプラント",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 150,
+    "accuracy": 90
+  },
+  "リーフストーム": {
+    "name": "リーフストーム",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 130,
+    "accuracy": 90
+  },
+  "はなびらのまい": {
+    "name": "はなびらのまい",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 100
+  },
+  "ソーラービーム": {
+    "name": "ソーラービーム",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 100
+  },
+  "エナジーボール": {
+    "name": "エナジーボール",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ギガドレイン": {
+    "name": "ギガドレイン",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 75,
+    "accuracy": 100
+  },
+  "くさむすび": {
+    "name": "くさむすび",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 0,
+    "accuracy": 100
+  },
+  "グラスフィールド": {
+    "name": "グラスフィールド",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "なやみのタネ": {
+    "name": "なやみのタネ",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ねをはる": {
+    "name": "ねをはる",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "こうごうせい": {
+    "name": "こうごうせい",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ねむりごな": {
+    "name": "ねむりごな",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 75
+  },
+  "せいちょう": {
+    "name": "せいちょう",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "やどりぎのタネ": {
+    "name": "やどりぎのタネ",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 90
+  },
+  "にほんばれ": {
+    "name": "にほんばれ",
+    "type": "ほのお",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "どくづき": {
+    "name": "どくづき",
+    "type": "どく",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ヘドロウェーブ": {
+    "name": "ヘドロウェーブ",
+    "type": "どく",
+    "category": "特殊",
+    "power": 95,
+    "accuracy": 100
+  },
+  "ヘドロばくだん": {
+    "name": "ヘドロばくだん",
+    "type": "どく",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ベノムショック": {
+    "name": "ベノムショック",
+    "type": "どく",
+    "category": "特殊",
+    "power": 65,
+    "accuracy": 100
+  },
+  "アシッドボム": {
+    "name": "アシッドボム",
+    "type": "どく",
+    "category": "特殊",
+    "power": 40,
+    "accuracy": 100
+  },
+  "どくどく": {
+    "name": "どくどく",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 90
+  },
+  "どくのこな": {
+    "name": "どくのこな",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 75
+  },
+  "じしん": {
+    "name": "じしん",
+    "type": "じめん",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 100
+  },
+  "じだんだ": {
+    "name": "じだんだ",
+    "type": "じめん",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "じならし": {
+    "name": "じならし",
+    "type": "じめん",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "だいちのちから": {
+    "name": "だいちのちから",
+    "type": "じめん",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ねむる": {
+    "name": "ねむる",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ドわすれ": {
+    "name": "ドわすれ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ひかりのかべ": {
+    "name": "ひかりのかべ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "のろい": {
+    "name": "のろい",
+    "type": "ゴースト",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "げきりん": {
+    "name": "げきりん",
+    "type": "ドラゴン",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "はたきおとす": {
+    "name": "はたきおとす",
+    "type": "あく",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 100
+  },
+  "あまえる": {
+    "name": "あまえる",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "かげぶんしん": {
+    "name": "かげぶんしん",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "リフレクター": {
+    "name": "リフレクター",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "どろかけ": {
+    "name": "どろかけ",
+    "type": "じめん",
+    "category": "特殊",
+    "power": 20,
+    "accuracy": 100
+  },
+  "いばる": {
+    "name": "いばる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 85
+  },
+  "メロメロ": {
+    "name": "メロメロ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "しんぴのまもり": {
+    "name": "しんぴのまもり",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "しめつける": {
+    "name": "しめつける",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 15,
+    "accuracy": 85
+  },
+  "いとをはく": {
+    "name": "いとをはく",
+    "type": "むし",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 95
+  },
+  "とおせんぼう": {
+    "name": "とおせんぼう",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "メガトンキック": {
+    "name": "メガトンキック",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 75
+  },
+  "はらだいこ": {
+    "name": "はらだいこ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "フレアドライブ": {
+    "name": "フレアドライブ",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "やけっぱち": {
+    "name": "やけっぱち",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "ほのおのパンチ": {
+    "name": "ほのおのパンチ",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "ほのおのキバ": {
+    "name": "ほのおのキバ",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 95
+  },
+  "ニトロチャージ": {
+    "name": "ニトロチャージ",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "ヒートスタンプ": {
+    "name": "ヒートスタンプ",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ブラストバーン": {
+    "name": "ブラストバーン",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 150,
+    "accuracy": 90
+  },
+  "オーバーヒート": {
+    "name": "オーバーヒート",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 130,
+    "accuracy": 90
+  },
+  "だいもんじ": {
+    "name": "だいもんじ",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 110,
+    "accuracy": 85
+  },
+  "れんごく": {
+    "name": "れんごく",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 100,
+    "accuracy": 50
+  },
+  "ねっぷう": {
+    "name": "ねっぷう",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 95,
+    "accuracy": 90
+  },
+  "かえんほうしゃ": {
+    "name": "かえんほうしゃ",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ほのおのうず": {
+    "name": "ほのおのうず",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 35,
+    "accuracy": 85
+  },
+  "おにび": {
+    "name": "おにび",
+    "type": "ほのお",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 85
+  },
+  "かみなりパンチ": {
+    "name": "かみなりパンチ",
+    "type": "でんき",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "そらをとぶ": {
+    "name": "そらをとぶ",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 95
+  },
+  "つばめがえし": {
+    "name": "つばめがえし",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 0
+  },
+  "アクロバット": {
+    "name": "アクロバット",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 55,
+    "accuracy": 100
+  },
+  "ぼうふう": {
+    "name": "ぼうふう",
+    "type": "ひこう",
+    "category": "特殊",
+    "power": 110,
+    "accuracy": 70
+  },
+  "エアスラッシュ": {
+    "name": "エアスラッシュ",
+    "type": "ひこう",
+    "category": "特殊",
+    "power": 75,
+    "accuracy": 95
+  },
+  "エアカッター": {
+    "name": "エアカッター",
+    "type": "ひこう",
+    "category": "特殊",
+    "power": 60,
+    "accuracy": 95
+  },
+  "はねやすめ": {
+    "name": "はねやすめ",
+    "type": "ひこう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いわなだれ": {
+    "name": "いわなだれ",
+    "type": "いわ",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 90
+  },
+  "がんせきふうじ": {
+    "name": "がんせきふうじ",
+    "type": "いわ",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 95
+  },
+  "げんしのちから": {
+    "name": "げんしのちから",
+    "type": "いわ",
+    "category": "特殊",
+    "power": 60,
+    "accuracy": 100
+  },
+  "すなあらし": {
+    "name": "すなあらし",
+    "type": "いわ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "あなをほる": {
+    "name": "あなをほる",
+    "type": "じめん",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ねっさのだいち": {
+    "name": "ねっさのだいち",
+    "type": "じめん",
+    "category": "特殊",
+    "power": 70,
+    "accuracy": 100
+  },
+  "きあいパンチ": {
+    "name": "きあいパンチ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 150,
+    "accuracy": 100
+  },
+  "かわらわり": {
+    "name": "かわらわり",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "カウンター": {
+    "name": "カウンター",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "きあいだま": {
+    "name": "きあいだま",
+    "type": "かくとう",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 70
+  },
+  "シャドークロー": {
+    "name": "シャドークロー",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "ドラゴンダイブ": {
+    "name": "ドラゴンダイブ",
+    "type": "ドラゴン",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 75
+  },
+  "ドラゴンクロー": {
+    "name": "ドラゴンクロー",
+    "type": "ドラゴン",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ワイドブレイカー": {
+    "name": "ワイドブレイカー",
+    "type": "ドラゴン",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "ドラゴンテール": {
+    "name": "ドラゴンテール",
+    "type": "ドラゴン",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 90
+  },
+  "スケイルショット": {
+    "name": "スケイルショット",
+    "type": "ドラゴン",
+    "category": "物理",
+    "power": 25,
+    "accuracy": 90
+  },
+  "りゅうのはどう": {
+    "name": "りゅうのはどう",
+    "type": "ドラゴン",
+    "category": "特殊",
+    "power": 85,
+    "accuracy": 100
+  },
+  "ドラゴンエール": {
+    "name": "ドラゴンエール",
+    "type": "ドラゴン",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "りゅうのまい": {
+    "name": "りゅうのまい",
+    "type": "ドラゴン",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "かみくだく": {
+    "name": "かみくだく",
+    "type": "あく",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ぶんまわす": {
+    "name": "ぶんまわす",
+    "type": "あく",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "かみつく": {
+    "name": "かみつく",
+    "type": "あく",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "なげつける": {
+    "name": "なげつける",
+    "type": "あく",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ふくろだたき": {
+    "name": "ふくろだたき",
+    "type": "あく",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "アイアンテール": {
+    "name": "アイアンテール",
+    "type": "はがね",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 75
+  },
+  "はがねのつばさ": {
+    "name": "はがねのつばさ",
+    "type": "はがね",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 90
+  },
+  "ちきゅうなげ": {
+    "name": "ちきゅうなげ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ばくれつパンチ": {
+    "name": "ばくれつパンチ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 50
+  },
+  "じわれ": {
+    "name": "じわれ",
+    "type": "じめん",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 30
+  },
+  "ブレイズキック": {
+    "name": "ブレイズキック",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 90
+  },
+  "マジカルフレイム": {
+    "name": "マジカルフレイム",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 75,
+    "accuracy": 100
+  },
+  "ダブルウイング": {
+    "name": "ダブルウイング",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 90
+  },
+  "おいかぜ": {
+    "name": "おいかぜ",
+    "type": "ひこう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "きりばらい": {
+    "name": "きりばらい",
+    "type": "ひこう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "こうそくスピン": {
+    "name": "こうそくスピン",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "ねこだまし": {
+    "name": "ねこだまし",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "じたばた": {
+    "name": "じたばた",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "からをやぶる": {
+    "name": "からをやぶる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "あくび": {
+    "name": "あくび",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ウェーブタックル": {
+    "name": "ウェーブタックル",
+    "type": "みず",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "アクアテール": {
+    "name": "アクアテール",
+    "type": "みず",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 90
+  },
+  "アクアブレイク": {
+    "name": "アクアブレイク",
+    "type": "みず",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 100
+  },
+  "ダイビング": {
+    "name": "ダイビング",
+    "type": "みず",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "たきのぼり": {
+    "name": "たきのぼり",
+    "type": "みず",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "クイックターン": {
+    "name": "クイックターン",
+    "type": "みず",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "アクアジェット": {
+    "name": "アクアジェット",
+    "type": "みず",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "しおふき": {
+    "name": "しおふき",
+    "type": "みず",
+    "category": "特殊",
+    "power": 150,
+    "accuracy": 100
+  },
+  "ハイドロカノン": {
+    "name": "ハイドロカノン",
+    "type": "みず",
+    "category": "特殊",
+    "power": 150,
+    "accuracy": 90
+  },
+  "ハイドロポンプ": {
+    "name": "ハイドロポンプ",
+    "type": "みず",
+    "category": "特殊",
+    "power": 110,
+    "accuracy": 80
+  },
+  "だくりゅう": {
+    "name": "だくりゅう",
+    "type": "みず",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 85
+  },
+  "なみのり": {
+    "name": "なみのり",
+    "type": "みず",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "みずのはどう": {
+    "name": "みずのはどう",
+    "type": "みず",
+    "category": "特殊",
+    "power": 60,
+    "accuracy": 100
+  },
+  "ひやみず": {
+    "name": "ひやみず",
+    "type": "みず",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 100
+  },
+  "うずしお": {
+    "name": "うずしお",
+    "type": "みず",
+    "category": "特殊",
+    "power": 35,
+    "accuracy": 85
+  },
+  "いのちのしずく": {
+    "name": "いのちのしずく",
+    "type": "みず",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "アクアリング": {
+    "name": "アクアリング",
+    "type": "みず",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "あまごい": {
+    "name": "あまごい",
+    "type": "みず",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "うちおとす": {
+    "name": "うちおとす",
+    "type": "いわ",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "マッドショット": {
+    "name": "マッドショット",
+    "type": "じめん",
+    "category": "特殊",
+    "power": 55,
+    "accuracy": 95
+  },
+  "アイススピナー": {
+    "name": "アイススピナー",
+    "type": "こおり",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "れいとうパンチ": {
+    "name": "れいとうパンチ",
+    "type": "こおり",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "ゆきなだれ": {
+    "name": "ゆきなだれ",
+    "type": "こおり",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "ふぶき": {
+    "name": "ふぶき",
+    "type": "こおり",
+    "category": "特殊",
+    "power": 110,
+    "accuracy": 70
+  },
+  "れいとうビーム": {
+    "name": "れいとうビーム",
+    "type": "こおり",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "こごえるかぜ": {
+    "name": "こごえるかぜ",
+    "type": "こおり",
+    "category": "特殊",
+    "power": 55,
+    "accuracy": 95
+  },
+  "くろいきり": {
+    "name": "くろいきり",
+    "type": "こおり",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ボディプレス": {
+    "name": "ボディプレス",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "はどうだん": {
+    "name": "はどうだん",
+    "type": "かくとう",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 0
+  },
+  "しねんのずつき": {
+    "name": "しねんのずつき",
+    "type": "エスパー",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 90
+  },
+  "ミラーコート": {
+    "name": "ミラーコート",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 0,
+    "accuracy": 100
+  },
+  "あくのはどう": {
+    "name": "あくのはどう",
+    "type": "あく",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "アイアンヘッド": {
+    "name": "アイアンヘッド",
+    "type": "はがね",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ジャイロボール": {
+    "name": "ジャイロボール",
+    "type": "はがね",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ラスターカノン": {
+    "name": "ラスターカノン",
+    "type": "はがね",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "てっぺき": {
+    "name": "てっぺき",
+    "type": "はがね",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ねっとう": {
+    "name": "ねっとう",
+    "type": "みず",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ダブルアタック": {
+    "name": "ダブルアタック",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 35,
+    "accuracy": 90
+  },
+  "がむしゃら": {
+    "name": "がむしゃら",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "バトンタッチ": {
+    "name": "バトンタッチ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "きあいだめ": {
+    "name": "きあいだめ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いやなおと": {
+    "name": "いやなおと",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 85
+  },
+  "エレキネット": {
+    "name": "エレキネット",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 55,
+    "accuracy": 95
+  },
+  "とびかかる": {
+    "name": "とびかかる",
+    "type": "むし",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "シザークロス": {
+    "name": "シザークロス",
+    "type": "むし",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "はいよるいちげき": {
+    "name": "はいよるいちげき",
+    "type": "むし",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 90
+  },
+  "とんぼがえり": {
+    "name": "とんぼがえり",
+    "type": "むし",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "むしくい": {
+    "name": "むしくい",
+    "type": "むし",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "とびつく": {
+    "name": "とびつく",
+    "type": "むし",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "とどめばり": {
+    "name": "とどめばり",
+    "type": "むし",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "ミサイルばり": {
+    "name": "ミサイルばり",
+    "type": "むし",
+    "category": "物理",
+    "power": 25,
+    "accuracy": 95
+  },
+  "かふんだんご": {
+    "name": "かふんだんご",
+    "type": "むし",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "むしのさざめき": {
+    "name": "むしのさざめき",
+    "type": "むし",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "クロスポイズン": {
+    "name": "クロスポイズン",
+    "type": "どく",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "どくびし": {
+    "name": "どくびし",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ドリルライナー": {
+    "name": "ドリルライナー",
+    "type": "じめん",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 95
+  },
+  "こうそくいどう": {
+    "name": "こうそくいどう",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "じごくづき": {
+    "name": "じごくづき",
+    "type": "あく",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ダメおし": {
+    "name": "ダメおし",
+    "type": "あく",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "どろぼう": {
+    "name": "どろぼう",
+    "type": "あく",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "しっぺがえし": {
+    "name": "しっぺがえし",
+    "type": "あく",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "むしのていこう": {
+    "name": "むしのていこう",
+    "type": "むし",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 100
+  },
+  "まとわりつく": {
+    "name": "まとわりつく",
+    "type": "むし",
+    "category": "特殊",
+    "power": 20,
+    "accuracy": 100
+  },
+  "でんこうせっか": {
+    "name": "でんこうせっか",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "さわぐ": {
+    "name": "さわぐ",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ふきとばし": {
+    "name": "ふきとばし",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ゴッドバード": {
+    "name": "ゴッドバード",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 140,
+    "accuracy": 90
+  },
+  "ブレイブバード": {
+    "name": "ブレイブバード",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "フェザーダンス": {
+    "name": "フェザーダンス",
+    "type": "ひこう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "みきり": {
+    "name": "みきり",
+    "type": "かくとう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ついばむ": {
+    "name": "ついばむ",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "まきつく": {
+    "name": "まきつく",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 15,
+    "accuracy": 90
+  },
+  "はきだす": {
+    "name": "はきだす",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 0,
+    "accuracy": 100
+  },
+  "のみこむ": {
+    "name": "のみこむ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "たくわえる": {
+    "name": "たくわえる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いたみわけ": {
+    "name": "いたみわけ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "へびにらみ": {
+    "name": "へびにらみ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "かみなりのキバ": {
+    "name": "かみなりのキバ",
+    "type": "でんき",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 95
+  },
+  "きゅうけつ": {
+    "name": "きゅうけつ",
+    "type": "むし",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ダストシュート": {
+    "name": "ダストシュート",
+    "type": "どく",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 80
+  },
+  "どくどくのキバ": {
+    "name": "どくどくのキバ",
+    "type": "どく",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "ゲップ": {
+    "name": "ゲップ",
+    "type": "どく",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 90
+  },
+  "とぐろをまく": {
+    "name": "とぐろをまく",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いえき": {
+    "name": "いえき",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "こおりのキバ": {
+    "name": "こおりのキバ",
+    "type": "こおり",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 95
+  },
+  "サイコファング": {
+    "name": "サイコファング",
+    "type": "エスパー",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 100
+  },
+  "うらみ": {
+    "name": "うらみ",
+    "type": "ゴースト",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "うっぷんばらし": {
+    "name": "うっぷんばらし",
+    "type": "あく",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "ふいうち": {
+    "name": "ふいうち",
+    "type": "あく",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "バークアウト": {
+    "name": "バークアウト",
+    "type": "あく",
+    "category": "特殊",
+    "power": 55,
+    "accuracy": 95
+  },
+  "すりかえ": {
+    "name": "すりかえ",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "いちゃもん": {
+    "name": "いちゃもん",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "かなしばり": {
+    "name": "かなしばり",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "フェイント": {
+    "name": "フェイント",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 30,
+    "accuracy": 100
+  },
+  "くすぐる": {
+    "name": "くすぐる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ねがいごと": {
+    "name": "ねがいごと",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "アンコール": {
+    "name": "アンコール",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ボルテッカー": {
+    "name": "ボルテッカー",
+    "type": "でんき",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "ワイルドボルト": {
+    "name": "ワイルドボルト",
+    "type": "でんき",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ほっぺすりすり": {
+    "name": "ほっぺすりすり",
+    "type": "でんき",
+    "category": "物理",
+    "power": 20,
+    "accuracy": 100
+  },
+  "でんじほう": {
+    "name": "でんじほう",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 50
+  },
+  "かみなり": {
+    "name": "かみなり",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 110,
+    "accuracy": 70
+  },
+  "10まんボルト": {
+    "name": "10まんボルト",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ほうでん": {
+    "name": "ほうでん",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ライジングボルト": {
+    "name": "ライジングボルト",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 70,
+    "accuracy": 100
+  },
+  "ボルトチェンジ": {
+    "name": "ボルトチェンジ",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 70,
+    "accuracy": 100
+  },
+  "チャージビーム": {
+    "name": "チャージビーム",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 90
+  },
+  "エレキボール": {
+    "name": "エレキボール",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 0,
+    "accuracy": 100
+  },
+  "エレキフィールド": {
+    "name": "エレキフィールド",
+    "type": "でんき",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "かいでんぱ": {
+    "name": "かいでんぱ",
+    "type": "でんき",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "じゅうでん": {
+    "name": "じゅうでん",
+    "type": "でんき",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "でんじは": {
+    "name": "でんじは",
+    "type": "でんき",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 90
+  },
+  "はやてがえし": {
+    "name": "はやてがえし",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 100
+  },
+  "きしかいせい": {
+    "name": "きしかいせい",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "わるだくみ": {
+    "name": "わるだくみ",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "うそなき": {
+    "name": "うそなき",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "じゃれつく": {
+    "name": "じゃれつく",
+    "type": "フェアリー",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 90
+  },
+  "みわくのボイス": {
+    "name": "みわくのボイス",
+    "type": "フェアリー",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ドレインキッス": {
+    "name": "ドレインキッス",
+    "type": "フェアリー",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 100
+  },
+  "てんしのキッス": {
+    "name": "てんしのキッス",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 75
+  },
+  "めいそう": {
+    "name": "めいそう",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ほしがる": {
+    "name": "ほしがる",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "でんじふゆう": {
+    "name": "でんじふゆう",
+    "type": "でんき",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "つぶらなひとみ": {
+    "name": "つぶらなひとみ",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ドレインパンチ": {
+    "name": "ドレインパンチ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "マジカルシャイン": {
+    "name": "マジカルシャイン",
+    "type": "フェアリー",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "スピードスワップ": {
+    "name": "スピードスワップ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "サイコキネシス": {
+    "name": "サイコキネシス",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ワイドフォース": {
+    "name": "ワイドフォース",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "サイコショック": {
+    "name": "サイコショック",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "サイコノイズ": {
+    "name": "サイコノイズ",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 75,
+    "accuracy": 100
+  },
+  "アシストパワー": {
+    "name": "アシストパワー",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 20,
+    "accuracy": 100
+  },
+  "サイコフィールド": {
+    "name": "サイコフィールド",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "マジックルーム": {
+    "name": "マジックルーム",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "スキルスワップ": {
+    "name": "スキルスワップ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "みらいよち": {
+    "name": "みらいよち",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 100
+  },
+  "サイドチェンジ": {
+    "name": "サイドチェンジ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "リサイクル": {
+    "name": "リサイクル",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ハイパーボイス": {
+    "name": "ハイパーボイス",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "トライアタック": {
+    "name": "トライアタック",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "おさきにどうぞ": {
+    "name": "おさきにどうぞ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "まねっこ": {
+    "name": "まねっこ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "このゆびとまれ": {
+    "name": "このゆびとまれ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "じこあんじ": {
+    "name": "じこあんじ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "うたう": {
+    "name": "うたう",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 55
+  },
+  "とびはねる": {
+    "name": "とびはねる",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 85
+  },
+  "メテオビーム": {
+    "name": "メテオビーム",
+    "type": "いわ",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 90
+  },
+  "ステルスロック": {
+    "name": "ステルスロック",
+    "type": "いわ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いやしのはどう": {
+    "name": "いやしのはどう",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ワンダールーム": {
+    "name": "ワンダールーム",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いやしのねがい": {
+    "name": "いやしのねがい",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "じゅうりょく": {
+    "name": "じゅうりょく",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "コスモパワー": {
+    "name": "コスモパワー",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ふういん": {
+    "name": "ふういん",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "トリック": {
+    "name": "トリック",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "シャドーボール": {
+    "name": "シャドーボール",
+    "type": "ゴースト",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ナイトヘッド": {
+    "name": "ナイトヘッド",
+    "type": "ゴースト",
+    "category": "特殊",
+    "power": 0,
+    "accuracy": 100
+  },
+  "コメットパンチ": {
+    "name": "コメットパンチ",
+    "type": "はがね",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 90
+  },
+  "ミストバースト": {
+    "name": "ミストバースト",
+    "type": "フェアリー",
+    "category": "特殊",
+    "power": 100,
+    "accuracy": 100
+  },
+  "ムーンフォース": {
+    "name": "ムーンフォース",
+    "type": "フェアリー",
+    "category": "特殊",
+    "power": 95,
+    "accuracy": 100
+  },
+  "ミストフィールド": {
+    "name": "ミストフィールド",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "つきのひかり": {
+    "name": "つきのひかり",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "はたく": {
+    "name": "はたく",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "ちいさくなる": {
+    "name": "ちいさくなる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いやしのすず": {
+    "name": "いやしのすず",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "なりきり": {
+    "name": "なりきり",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "とっておき": {
+    "name": "とっておき",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 140,
+    "accuracy": 100
+  },
+  "スイープビンタ": {
+    "name": "スイープビンタ",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 25,
+    "accuracy": 85
+  },
+  "とおぼえ": {
+    "name": "とおぼえ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "しっとのほのお": {
+    "name": "しっとのほのお",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 70,
+    "accuracy": 100
+  },
+  "じんつうりき": {
+    "name": "じんつうりき",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "パワースワップ": {
+    "name": "パワースワップ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "さいみんじゅつ": {
+    "name": "さいみんじゅつ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 60
+  },
+  "たたりめ": {
+    "name": "たたりめ",
+    "type": "ゴースト",
+    "category": "特殊",
+    "power": 65,
+    "accuracy": 100
+  },
+  "あやしいひかり": {
+    "name": "あやしいひかり",
+    "type": "ゴースト",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "イカサマ": {
+    "name": "イカサマ",
+    "type": "あく",
+    "category": "物理",
+    "power": 95,
+    "accuracy": 100
+  },
+  "おきみやげ": {
+    "name": "おきみやげ",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "こおりのつぶて": {
+    "name": "こおりのつぶて",
+    "type": "こおり",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "つららばり": {
+    "name": "つららばり",
+    "type": "こおり",
+    "category": "物理",
+    "power": 25,
+    "accuracy": 100
+  },
+  "トリプルアクセル": {
+    "name": "トリプルアクセル",
+    "type": "こおり",
+    "category": "物理",
+    "power": 20,
+    "accuracy": 90
+  },
+  "フリーズドライ": {
+    "name": "フリーズドライ",
+    "type": "こおり",
+    "category": "特殊",
+    "power": 70,
+    "accuracy": 100
+  },
+  "ゆきげしき": {
+    "name": "ゆきげしき",
+    "type": "こおり",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "オーロラベール": {
+    "name": "オーロラベール",
+    "type": "こおり",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ぜったいれいど": {
+    "name": "ぜったいれいど",
+    "type": "こおり",
+    "category": "特殊",
+    "power": 0,
+    "accuracy": 30
+  },
+  "こおりのいぶき": {
+    "name": "こおりのいぶき",
+    "type": "こおり",
+    "category": "特殊",
+    "power": 60,
+    "accuracy": 90
+  },
+  "フラフラダンス": {
+    "name": "フラフラダンス",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ソーラーブレード": {
+    "name": "ソーラーブレード",
+    "type": "くさ",
+    "category": "物理",
+    "power": 125,
+    "accuracy": 100
+  },
+  "ちからをすいとる": {
+    "name": "ちからをすいとる",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "しびれごな": {
+    "name": "しびれごな",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 75
+  },
+  "ふしょくガス": {
+    "name": "ふしょくガス",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "あばれる": {
+    "name": "あばれる",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "しんそく": {
+    "name": "しんそく",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "あさのひざし": {
+    "name": "あさのひざし",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "だいふんげき": {
+    "name": "だいふんげき",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "もえつきる": {
+    "name": "もえつきる",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 130,
+    "accuracy": 100
+  },
+  "インファイト": {
+    "name": "インファイト",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "ばかぢから": {
+    "name": "ばかぢから",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "もろはのずつき": {
+    "name": "もろはのずつき",
+    "type": "いわ",
+    "category": "物理",
+    "power": 150,
+    "accuracy": 80
+  },
+  "ストーンエッジ": {
+    "name": "ストーンエッジ",
+    "type": "いわ",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 80
+  },
+  "ロックブラスト": {
+    "name": "ロックブラスト",
+    "type": "いわ",
+    "category": "物理",
+    "power": 25,
+    "accuracy": 90
+  },
+  "パワージェム": {
+    "name": "パワージェム",
+    "type": "いわ",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "スマートホーン": {
+    "name": "スマートホーン",
+    "type": "はがね",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 0
+  },
+  "じこさいせい": {
+    "name": "じこさいせい",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "サイコカッター": {
+    "name": "サイコカッター",
+    "type": "エスパー",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "ガードシェア": {
+    "name": "ガードシェア",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "トリックルーム": {
+    "name": "トリックルーム",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ガードスワップ": {
+    "name": "ガードスワップ",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ちょうはつ": {
+    "name": "ちょうはつ",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "パワートリック": {
+    "name": "パワートリック",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ワイドガード": {
+    "name": "ワイドガード",
+    "type": "いわ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "10まんばりき": {
+    "name": "10まんばりき",
+    "type": "じめん",
+    "category": "物理",
+    "power": 95,
+    "accuracy": 95
+  },
+  "クロスチョップ": {
+    "name": "クロスチョップ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 80
+  },
+  "ローキック": {
+    "name": "ローキック",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 100
+  },
+  "やまあらし": {
+    "name": "やまあらし",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "けたぐり": {
+    "name": "けたぐり",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "コーチング": {
+    "name": "コーチング",
+    "type": "かくとう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ファストガード": {
+    "name": "ファストガード",
+    "type": "かくとう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ビルドアップ": {
+    "name": "ビルドアップ",
+    "type": "かくとう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "DDラリアット": {
+    "name": "DDラリアット",
+    "type": "あく",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 100
+  },
+  "バレットパンチ": {
+    "name": "バレットパンチ",
+    "type": "はがね",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "ヘビーボンバー": {
+    "name": "ヘビーボンバー",
+    "type": "はがね",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "マッハパンチ": {
+    "name": "マッハパンチ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "しんくうは": {
+    "name": "しんくうは",
+    "type": "かくとう",
+    "category": "特殊",
+    "power": 40,
+    "accuracy": 100
+  },
+  "リーフブレード": {
+    "name": "リーフブレード",
+    "type": "くさ",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "クリアスモッグ": {
+    "name": "クリアスモッグ",
+    "type": "どく",
+    "category": "特殊",
+    "power": 50,
+    "accuracy": 0
+  },
+  "なまける": {
+    "name": "なまける",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "シェルブレード": {
+    "name": "シェルブレード",
+    "type": "みず",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 95
+  },
+  "シェルアームズ": {
+    "name": "シェルアームズ",
+    "type": "どく",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "じばく": {
+    "name": "じばく",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 200,
+    "accuracy": 100
+  },
+  "ミラータイプ": {
+    "name": "ミラータイプ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "くろいまなざし": {
+    "name": "くろいまなざし",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ほろびのうた": {
+    "name": "ほろびのうた",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ポルターガイスト": {
+    "name": "ポルターガイスト",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 110,
+    "accuracy": 90
+  },
+  "ゴーストダイブ": {
+    "name": "ゴーストダイブ",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "シャドーパンチ": {
+    "name": "シャドーパンチ",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 0
+  },
+  "みちづれ": {
+    "name": "みちづれ",
+    "type": "ゴースト",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "かげうち": {
+    "name": "かげうち",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "だいばくはつ": {
+    "name": "だいばくはつ",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 250,
+    "accuracy": 100
+  },
+  "アームハンマー": {
+    "name": "アームハンマー",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 90
+  },
+  "ともえなげ": {
+    "name": "ともえなげ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 90
+  },
+  "ブレイククロー": {
+    "name": "ブレイククロー",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 95
+  },
+  "ハサミギロチン": {
+    "name": "ハサミギロチン",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 30
+  },
+  "ハードプレス": {
+    "name": "ハードプレス",
+    "type": "はがね",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "レイジングブル": {
+    "name": "レイジングブル",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "メガホーン": {
+    "name": "メガホーン",
+    "type": "むし",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 85
+  },
+  "つのドリル": {
+    "name": "つのドリル",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 30
+  },
+  "へんしん": {
+    "name": "へんしん",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "とける": {
+    "name": "とける",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "きんぞくおん": {
+    "name": "きんぞくおん",
+    "type": "はがね",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 85
+  },
+  "ふんえん": {
+    "name": "ふんえん",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ロックカット": {
+    "name": "ロックカット",
+    "type": "いわ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "サンダーダイブ": {
+    "name": "サンダーダイブ",
+    "type": "でんき",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 95
+  },
+  "アイアンローラー": {
+    "name": "アイアンローラー",
+    "type": "はがね",
+    "category": "物理",
+    "power": 130,
+    "accuracy": 100
+  },
+  "りゅうせいぐん": {
+    "name": "りゅうせいぐん",
+    "type": "ドラゴン",
+    "category": "特殊",
+    "power": 130,
+    "accuracy": 90
+  },
+  "ふんか": {
+    "name": "ふんか",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 150,
+    "accuracy": 100
+  },
+  "ひゃっきやこう": {
+    "name": "ひゃっきやこう",
+    "type": "ゴースト",
+    "category": "特殊",
+    "power": 65,
+    "accuracy": 100
+  },
+  "おだてる": {
+    "name": "おだてる",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "であいがしら": {
+    "name": "であいがしら",
+    "type": "むし",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 100
+  },
+  "ねばねばネット": {
+    "name": "ねばねばネット",
+    "type": "むし",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "いかりのこな": {
+    "name": "いかりのこな",
+    "type": "むし",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "どくのいと": {
+    "name": "どくのいと",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "つじぎり": {
+    "name": "つじぎり",
+    "type": "あく",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "コットンガード": {
+    "name": "コットンガード",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "わたほうし": {
+    "name": "わたほうし",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "パラボラチャージ": {
+    "name": "パラボラチャージ",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 65,
+    "accuracy": 100
+  },
+  "じばそうさ": {
+    "name": "じばそうさ",
+    "type": "でんき",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "みずびたし": {
+    "name": "みずびたし",
+    "type": "みず",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "さむいギャグ": {
+    "name": "さむいギャグ",
+    "type": "こおり",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "さきおくり": {
+    "name": "さきおくり",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ぶきみなじゅもん": {
+    "name": "ぶきみなじゅもん",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "すなじごく": {
+    "name": "すなじごく",
+    "type": "じめん",
+    "category": "物理",
+    "power": 35,
+    "accuracy": 85
+  },
+  "まきびし": {
+    "name": "まきびし",
+    "type": "じめん",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "てっていこうせん": {
+    "name": "てっていこうせん",
+    "type": "はがね",
+    "category": "特殊",
+    "power": 140,
+    "accuracy": 95
+  },
+  "つぼをつく": {
+    "name": "つぼをつく",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "どくばりセンボン": {
+    "name": "どくばりセンボン",
+    "type": "どく",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "ドリルくちばし": {
+    "name": "ドリルくちばし",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "いかりのまえば": {
+    "name": "いかりのまえば",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 90
+  },
+  "ほうふく": {
+    "name": "ほうふく",
+    "type": "あく",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "しっぽきり": {
+    "name": "しっぽきり",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "とびひざげり": {
+    "name": "とびひざげり",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 130,
+    "accuracy": 90
+  },
+  "メタルバースト": {
+    "name": "メタルバースト",
+    "type": "はがね",
+    "category": "物理",
+    "power": 0,
+    "accuracy": 100
+  },
+  "すてゼリフ": {
+    "name": "すてゼリフ",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "かかとおとし": {
+    "name": "かかとおとし",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 90
+  },
+  "ばくおんぱ": {
+    "name": "ばくおんぱ",
+    "type": "ノーマル",
+    "category": "特殊",
+    "power": 140,
+    "accuracy": 100
+  },
+  "なかまづくり": {
+    "name": "なかまづくり",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "つららおとし": {
+    "name": "つららおとし",
+    "type": "こおり",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 90
+  },
+  "ウッドハンマー": {
+    "name": "ウッドハンマー",
+    "type": "くさ",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "ぶちかまし": {
+    "name": "ぶちかまし",
+    "type": "じめん",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "つけあがる": {
+    "name": "つけあがる",
+    "type": "あく",
+    "category": "物理",
+    "power": 20,
+    "accuracy": 100
+  },
+  "いのちがけ": {
+    "name": "いのちがけ",
+    "type": "かくとう",
+    "category": "特殊",
+    "power": 0,
+    "accuracy": 100
+  },
+  "キラースピン": {
+    "name": "キラースピン",
+    "type": "どく",
+    "category": "物理",
+    "power": 30,
+    "accuracy": 100
+  },
+  "ボーンラッシュ": {
+    "name": "ボーンラッシュ",
+    "type": "じめん",
+    "category": "物理",
+    "power": 30,
+    "accuracy": 90
+  },
+  "アイスハンマー": {
+    "name": "アイスハンマー",
+    "type": "こおり",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 90
+  },
+  "がんせきほう": {
+    "name": "がんせきほう",
+    "type": "いわ",
+    "category": "物理",
+    "power": 150,
+    "accuracy": 90
+  },
+  "クラブハンマー": {
+    "name": "クラブハンマー",
+    "type": "みず",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 95
+  },
+  "アクアカッター": {
+    "name": "アクアカッター",
+    "type": "みず",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 100
+  },
+  "せいなるつるぎ": {
+    "name": "せいなるつるぎ",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ひけん・ちえなみ": {
+    "name": "ひけん・ちえなみ",
+    "type": "あく",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 90
+  },
+  "なみだめ": {
+    "name": "なみだめ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ほおばる": {
+    "name": "ほおばる",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ニードルガード": {
+    "name": "ニードルガード",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "シンプルビーム": {
+    "name": "シンプルビーム",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "パワーシェア": {
+    "name": "パワーシェア",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ナイトバースト": {
+    "name": "ナイトバースト",
+    "type": "あく",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 95
+  },
+  "うらみつらみ": {
+    "name": "うらみつらみ",
+    "type": "ゴースト",
+    "category": "特殊",
+    "power": 75,
+    "accuracy": 100
+  },
+  "トラバサミ": {
+    "name": "トラバサミ",
+    "type": "はがね",
+    "category": "物理",
+    "power": 35,
+    "accuracy": 100
+  },
+  "ほのおのまい": {
+    "name": "ほのおのまい",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ちょうのまい": {
+    "name": "ちょうのまい",
+    "type": "むし",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "みずしゅりけん": {
+    "name": "みずしゅりけん",
+    "type": "みず",
+    "category": "特殊",
+    "power": 15,
+    "accuracy": 100
+  },
+  "おたけび": {
+    "name": "おたけび",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "はめつのひかり": {
+    "name": "はめつのひかり",
+    "type": "フェアリー",
+    "category": "特殊",
+    "power": 140,
+    "accuracy": 90
+  },
+  "キングシールド": {
+    "name": "キングシールド",
+    "type": "はがね",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "アロマミスト": {
+    "name": "アロマミスト",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ひっくりかえす": {
+    "name": "ひっくりかえす",
+    "type": "あく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "そうでん": {
+    "name": "そうでん",
+    "type": "でんき",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "フライングプレス": {
+    "name": "フライングプレス",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 100,
+    "accuracy": 95
+  },
+  "たてこもる": {
+    "name": "たてこもる",
+    "type": "はがね",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "フェアリーロック": {
+    "name": "フェアリーロック",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ロックオン": {
+    "name": "ロックオン",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ウッドホーン": {
+    "name": "ウッドホーン",
+    "type": "くさ",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "もりののろい": {
+    "name": "もりののろい",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ハロウィン": {
+    "name": "ハロウィン",
+    "type": "ゴースト",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ひょうざんおろし": {
+    "name": "ひょうざんおろし",
+    "type": "こおり",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 85
+  },
+  "かげぬい": {
+    "name": "かげぬい",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "3ぼんのや": {
+    "name": "3ぼんのや",
+    "type": "かくとう",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "うたかたのアリア": {
+    "name": "うたかたのアリア",
+    "type": "みず",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "くちばしキャノン": {
+    "name": "くちばしキャノン",
+    "type": "ひこう",
+    "category": "物理",
+    "power": 120,
+    "accuracy": 100
+  },
+  "アクセルロック": {
+    "name": "アクセルロック",
+    "type": "いわ",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "トーチカ": {
+    "name": "トーチカ",
+    "type": "どく",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ほのおのムチ": {
+    "name": "ほのおのムチ",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "トロピカルキック": {
+    "name": "トロピカルキック",
+    "type": "くさ",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 100
+  },
+  "さいはい": {
+    "name": "さいはい",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "スケイルノイズ": {
+    "name": "スケイルノイズ",
+    "type": "ドラゴン",
+    "category": "特殊",
+    "power": 110,
+    "accuracy": 100
+  },
+  "ソウルビート": {
+    "name": "ソウルビート",
+    "type": "ドラゴン",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "Gのちから": {
+    "name": "Gのちから",
+    "type": "くさ",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "りんごさん": {
+    "name": "りんごさん",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 90,
+    "accuracy": 100
+  },
+  "おちゃかい": {
+    "name": "おちゃかい",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "まほうのこな": {
+    "name": "まほうのこな",
+    "type": "エスパー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 100
+  },
+  "ソウルクラッシュ": {
+    "name": "ソウルクラッシュ",
+    "type": "フェアリー",
+    "category": "物理",
+    "power": 75,
+    "accuracy": 100
+  },
+  "デコレーション": {
+    "name": "デコレーション",
+    "type": "フェアリー",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "はいすいのじん": {
+    "name": "はいすいのじん",
+    "type": "かくとう",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "オーラぐるま": {
+    "name": "オーラぐるま",
+    "type": "でんき",
+    "category": "物理",
+    "power": 110,
+    "accuracy": 100
+  },
+  "ドラゴンアロー": {
+    "name": "ドラゴンアロー",
+    "type": "ドラゴン",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "バリアーラッシュ": {
+    "name": "バリアーラッシュ",
+    "type": "エスパー",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 90
+  },
+  "がんせきアックス": {
+    "name": "がんせきアックス",
+    "type": "いわ",
+    "category": "物理",
+    "power": 65,
+    "accuracy": 90
+  },
+  "おはかまいり": {
+    "name": "おはかまいり",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "フェイタルクロー": {
+    "name": "フェイタルクロー",
+    "type": "どく",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "トリックフラワー": {
+    "name": "トリックフラワー",
+    "type": "くさ",
+    "category": "物理",
+    "power": 70,
+    "accuracy": 0
+  },
+  "フレアソング": {
+    "name": "フレアソング",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "アクアステップ": {
+    "name": "アクアステップ",
+    "type": "みず",
+    "category": "物理",
+    "power": 80,
+    "accuracy": 100
+  },
+  "ネズミざん": {
+    "name": "ネズミざん",
+    "type": "ノーマル",
+    "category": "物理",
+    "power": 20,
+    "accuracy": 90
+  },
+  "おかたづけ": {
+    "name": "おかたづけ",
+    "type": "ノーマル",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "しおづけ": {
+    "name": "しおづけ",
+    "type": "いわ",
+    "category": "物理",
+    "power": 40,
+    "accuracy": 100
+  },
+  "アーマーキャノン": {
+    "name": "アーマーキャノン",
+    "type": "ほのお",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 100
+  },
+  "むねんのつるぎ": {
+    "name": "むねんのつるぎ",
+    "type": "ほのお",
+    "category": "物理",
+    "power": 90,
+    "accuracy": 100
+  },
+  "ハバネロエキス": {
+    "name": "ハバネロエキス",
+    "type": "くさ",
+    "category": "変化",
+    "power": 0,
+    "accuracy": 0
+  },
+  "ルミナコリジョン": {
+    "name": "ルミナコリジョン",
+    "type": "エスパー",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  },
+  "デカハンマー": {
+    "name": "デカハンマー",
+    "type": "はがね",
+    "category": "物理",
+    "power": 160,
+    "accuracy": 100
+  },
+  "ジェットパンチ": {
+    "name": "ジェットパンチ",
+    "type": "みず",
+    "category": "物理",
+    "power": 60,
+    "accuracy": 100
+  },
+  "ふんどのこぶし": {
+    "name": "ふんどのこぶし",
+    "type": "ゴースト",
+    "category": "物理",
+    "power": 50,
+    "accuracy": 100
+  },
+  "ドゲザン": {
+    "name": "ドゲザン",
+    "type": "あく",
+    "category": "物理",
+    "power": 85,
+    "accuracy": 0
+  },
+  "ゴールドラッシュ": {
+    "name": "ゴールドラッシュ",
+    "type": "はがね",
+    "category": "特殊",
+    "power": 120,
+    "accuracy": 95
+  },
+  "シャカシャカほう": {
+    "name": "シャカシャカほう",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 90
+  },
+  "エレクトロビーム": {
+    "name": "エレクトロビーム",
+    "type": "でんき",
+    "category": "特殊",
+    "power": 130,
+    "accuracy": 100
+  },
+  "みずあめボム": {
+    "name": "みずあめボム",
+    "type": "くさ",
+    "category": "特殊",
+    "power": 60,
+    "accuracy": 90
+  },
+  "きまぐレーザー": {
+    "name": "きまぐレーザー",
+    "type": "ドラゴン",
+    "category": "特殊",
+    "power": 80,
+    "accuracy": 100
+  }
+}
