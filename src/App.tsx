@@ -316,7 +316,10 @@ export default function App() {
                       {fullPokedex.map(p => <option key={p.id} value={p.name} />)}
                     </datalist>
                     <datalist id="move-assist-list">
-                      <option value="じしん" /><option value="10まんボルト" /><option value="れいとうビーム" /><option value="インファイト" />
+                      {/* 🟢 今選んでいるポケモンが「実際に覚える技」だけを候補に出す（未入力時は全技を表示） */}
+                      {(fullPokedex.find(p => p.name === tempPokemon.name)?.moves || Object.keys(movesDict)).map(moveName => (
+                        <option key={moveName} value={moveName} />
+                      ))}
                     </datalist>
                   </div>
 
